@@ -1,5 +1,3 @@
-"use client";
-
 import HeroSec from "@/components/hero-sec";
 import InitialLoader from "@/components/initial-loader";
 
