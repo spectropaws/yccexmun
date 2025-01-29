@@ -1,3 +1,4 @@
+"use client"
 import { useState } from 'react';
 import Link from 'next/link';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, navigationMenuTriggerStyle, hoverUnderlineGradient } from "./ui/navigation-menu";

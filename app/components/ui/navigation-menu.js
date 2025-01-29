@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link';
 
 export const hoverUnderlineGradient = () => {
   return  "hover:underline-gradient";
@@ -15,11 +15,11 @@ export function NavigationMenuItem({ children }) {
   return <div className="navigation-menu-item list-none m-0 p-0">{children}</div>; 
 }
 
-export function NavigationMenuLink({ children, className }) {
+export function NavigationMenuLink({ children, className, href = "" }) {
   return (
-    <a className={`navigation-menu-link ${className} px-4 py-2 rounded-md no-underline transition-colors duration-300`}>
+    <Link href={href} className={`navigation-menu-link ${className} px-4 py-2 rounded-md no-underline transition-colors duration-300`}>
       {children}
-    </a>
+    </Link>
   );
 }
 
