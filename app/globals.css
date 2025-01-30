@@ -62,6 +62,16 @@ body {
   }
 }
 
+@layer utilities {
+  .grid-background {
+    background-color: #f1f1f1;
+    opacity: 1;
+    background-image: linear-gradient(#e3d4ce 1.1px, transparent 1.1px),
+      linear-gradient(to right, #e3d4ce 1.1px, #f1f1f1 1.1px);
+    background-size: 22px 22px;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -70,3 +80,4 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
