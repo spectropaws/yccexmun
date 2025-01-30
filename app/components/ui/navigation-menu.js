@@ -6,7 +6,6 @@ export const hoverUnderlineGradient = () => {
   
 };
 
-
 export function NavigationMenu({ children }) {
   return <div className="navigation-menu list-none m-0 p-0">{children}</div>; 
 }
