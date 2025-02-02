@@ -4,7 +4,6 @@ import InitialLoader from "../components/initial-loader";
 import Carousel from "./components/Carousel";
 import Navbar from "./components/Navbar";
 import "./components/ui/styles.css";
-import "./styles/globals.css";
 import ContentSection from "../components/ContentSection";
 import ImportantDates from "../components/ImportantDates";
 import Footer from "../components/Footer";

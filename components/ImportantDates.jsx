@@ -1,29 +1,21 @@
+import { EventDates } from "../data";
 import React from "react";
 
 const ImportantDates = () => {
-  const dates = [
-    { event: "Registration Deadline", date: "18 Feb 2025" },
-    { event: "Selected Teams Announcement", date: "03 Mar 2025" },
-    { event: "Final Debate", date: "22-23 Mar 2025" },
-  ];
 
   return (
-    <div className="bg-opacity-20 rounded-lg p-8 max-w-xl mx-auto mt-10">
-      <h2 className="text-4xl font-bold text-center text-gray-800 mb-6">
+    <div className="bg-[#F5F5F5] rounded-lg p-8 max-w-xl mx-auto mt-10 mb-5">
+      <h2 className="text-4xl font-bold text-center bg-gradient-to-t from-[#C2A597] to-[#54250B] bg-clip-text text-transparent mb-8">
         Important Dates
       </h2>
-      <ul className="space-y-4">
-        {dates.map((item, index) => (
+      <ul className="space-y-6">
+        {EventDates.map((item, index) => (
           <li
             key={index}
-            className="flex justify-between items-center bg-gray-800 bg-opacity-10 rounded-lg p-3 transition-all hover:shadow-md border hover:border-[#C2A597]"
+            className="flex justify-between items-center bg-white rounded-lg p-4 transition-all ease-in-out transform hover:scale-105 hover:shadow-2xl hover:bg-[#F9F9F9] border-2 border-transparent hover:border-[#C2A597]"
           >
-            <div className="text-lg font-semibold text-gray-700">
-              {item.event}
-            </div>
-            <div className="text-lg font-semibold text-blue-500">
-              {item.date}
-            </div>
+            <div className="text-lg font-medium text-[#333]">{item.event}</div>
+            <div className="text-lg font-semibold text-[#54250B]">{item.date}</div>
           </li>
         ))}
       </ul>
