@@ -8,6 +8,7 @@ import "./styles/globals.css";
 import ContentSection from "../components/ContentSection";
 import ImportantDates from "../components/ImportantDates";
 import Footer from "../components/Footer";
+import Sponsors from "../components/sponsors";
 
 const Page = () => {
   return (
@@ -19,6 +20,7 @@ const Page = () => {
           <HeroSec />
           <Carousel />
           <ContentSection />
+          <Sponsors />
           <ImportantDates />
         </div>
       </div>
