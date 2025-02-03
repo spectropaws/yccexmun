@@ -1,9 +1,11 @@
+// Important date Timeline
 export const EventDates = [
-    { event: "Registration Deadline", date: "18 Feb 2025" },
-    { event: "Selected Teams Announcement", date: "03 Mar 2025" },
-    { event: "Final Debate", date: "22-23 Mar 2025" },
-  ];
-
+  { event: "Registration Deadline", date: "01 Feb 2025" },
+  { event: "Teams Announcement", date: "20 Feb 2025" },
+  { event: "Orientation Session", date: "05 Mar 2025" },
+  { event: "Final Debate", date: "22 Mar 2025" },
+  { event: "Award Ceremony", date: "23 Mar 2025" },
+];
 
 // Footer Data
 import { Phone, Mail, Globe } from "lucide-react";
