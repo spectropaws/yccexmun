@@ -43,7 +43,7 @@ const HeroSec = () => {
   });
 
   return (
-    <div className="bg-[#EFE7E4] w-full h-full px-4 md:px-10 py-10 md:py-20 rounded-2xl">
+    <div className="bg-[#EFE7E4] w-full h-full px-4 md:px-10 py-10 md:py-20 rounded-2xl shadow-md">
       <div
         ref={recEff}
         className="border border-red-500 rounded-lg flex items-center px-4 py-1 gap-4 w-max opacity-100 mb-5"

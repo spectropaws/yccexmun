@@ -2,7 +2,7 @@ import { Instagram, Link, MapPinned, Phone, Mail, Globe } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#EFE7E4] text-[#54250B] py-6 mt-8 shadow-lg">
+    <footer className="bg-[#54250B] text-[#EFE7E4] py-6 mt-8 shadow-lg">
       <div className="container mx-auto px-3">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center md:text-left">
           {/* Location */}
@@ -10,7 +10,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold">Location</h3>
 
             <div className="flex items-center space-x-1 mb-1">
-              <MapPinned className="h-5 w-5 text-[#54250B]" />
+              <MapPinned className="h-5 w-5 text-[#EFE7E4]" />
               <p className="text-base opacity-80 leading-relaxed">
                 YCCE, Nagpur, Maharashtra, India - 441110
               </p>
@@ -32,19 +32,19 @@ const Footer = () => {
                 title: "Phone: ",
                 url: "tel:+919999999999",
                 value: "9999999999",
-                icon: <Phone className="h-4 w-4 text-[#54250B]" />,
+                icon: <Phone className="h-4 w-4 text-[#EFE7E4]" />,
               },
               {
                 title: "Email: ",
                 url: "mailto:yccexmun@gmail.com",
                 value: "yccexmun@gmail.com",
-                icon: <Mail className="h-4 w-4 text-[#54250B]" />,
+                icon: <Mail className="h-4 w-4 text-[#EFE7E4]" />,
               },
               {
                 title: "Website: ",
                 url: "https://www.yccexmun.com",
                 value: "www.yccexmun.com",
-                icon: <Globe className="h-4 w-4 text-[#54250B]" />,
+                icon: <Globe className="h-4 w-4 text-[#EFE7E4]" />,
               },
             ].map((item, index) => (
               <div key={index} className="flex items-center space-x-2 mb-1">
@@ -53,7 +53,7 @@ const Footer = () => {
                   <span className="font-bold">{item.title}</span>
                   <a
                     href={item.url}
-                    className="font-medium text-[#54250B] hover:text-[#2563EB] hover:underline underline-offset-2 transition-colors duration-200"
+                    className="font-medium text-[#EFE7E4] hover:text-[#2563EB] hover:underline underline-offset-2 transition-colors duration-200"
                   >
                     {item.value}
                   </a>
@@ -114,7 +114,7 @@ const Footer = () => {
         </div>
 
         {/* Footer */}
-        <div className="text-4xl border-t border-[#C2A597] text-center font-semibold text-[#54250B] tracking-wider mt-6">
+        <div className="text-4xl border-t border-[#C2A597] text-center font-semibold text-[#EFE7E4] tracking-wider mt-6">
           <div className="text-center text-lg tracking-normal mt-2 font-normal">
             <p>&copy; 2025 YCCE X MUN. All Rights Reserved.</p>
           </div>
