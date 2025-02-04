@@ -9,6 +9,7 @@ import CardGrid from "./components/CardGrid";
 import ContentSection from "../components/ContentSection";
 import ImportantDates from "../components/ImportantDates";
 import Footer from "../components/Footer";
+import Sponsors from "../components/sponsors";
 
 const Page = () => {
   return (
@@ -21,6 +22,7 @@ const Page = () => {
           <CardGrid/>
           {/*<Carousel />*/}
           <ContentSection />
+          <Sponsors />
           <ImportantDates />
         </div>
       </div>

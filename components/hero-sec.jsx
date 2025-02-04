@@ -2,7 +2,7 @@
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { ArrowUpRight, Dot } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Dot } from "lucide-react";
 import React, { useRef } from "react";
 
 const HeroSec = () => {
@@ -43,7 +43,7 @@ const HeroSec = () => {
   });
 
   return (
-    <div className="bg-[#EFE7E4] w-full h-full px-4 md:px-10 py-10 md:py-20 rounded-2xl shadow-md">
+    <div className="bg-[#EFE7E4] w-full h-full px-4 md:px-10 py-10 md:py-20 rounded-2xl shadow-lg">
       <div
         ref={recEff}
         className="border border-red-500 rounded-lg flex items-center px-4 py-1 gap-4 w-max opacity-100 mb-5"
@@ -65,16 +65,31 @@ const HeroSec = () => {
               </h3>
             </div>
           </div>
-          <div className="mt-10 lg:mt-0">
+          <div className="mt-10 lg:mt-5 md:mt-10 lg:mb-14">
             <div ref={card} className="w-full md:w-[70%]">
               <div className="border border-[#54250B] rounded-xl p-3 md:p-6 flex overflow-hidden relative md:gap-6">
                 <div className=" w-full md:w-1/2 z-10">
                   <h5 className="text-3xl text-nowrap">
                     Book Your Seat <br /> Now
                   </h5>
-                  <button className="text-nowrap px-3 py-1 border rounded-lg bg-[#C2A597] border-[#54250B] mt-5 flex items-center gap-3">
+                  <button className="text-nowrap group hover:-translate-y-2 hover:scale-110 hover:shadow-lg px-3 py-1 border rounded-lg bg-[#C2A597] hover:bg-transparent duration-200 border-[#54250B] mt-5 flex items-center gap-3">
                     Book seat
-                    <ArrowUpRight size={20} />
+                    <span className="w-8 overflow-hidden">
+                      <div className="flex gap-4 -translate-x-[100%] group-hover:translate-x-[30%] duration-500">
+                        <div className="">
+                          <ArrowRight
+                            className="group-hover:rotate-0 duration-200 group-hover:"
+                            size={20}
+                          />
+                        </div>
+                        <div>
+                          <ArrowRight
+                            className="group-hover:rotate-0 duration-200 group-hover:"
+                            size={20}
+                          />
+                        </div>
+                      </div>
+                    </span>
                   </button>
                 </div>
                 <div
