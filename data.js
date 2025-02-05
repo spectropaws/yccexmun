@@ -46,6 +46,7 @@ export const NavbarLinksData = [
   { url: "/#schedule", title: "Event Schedule" },
   { url: "/", title: "Commitee" },
   { url: "/register", title: "Register" },
+
 ];
 
 //  Content Section
@@ -148,5 +149,45 @@ export const teamsData = [
         githubURL: "https://www.github.com/nastyax0",
       },
     ],
+  },
+];
+
+// Advisory Board
+
+export const advisoryBoard = [
+  {
+    imgSrc: "/demo-mun.png",
+    name: "PIYUSH PARIWAKAM",
+    position: "Position",
+    description:
+      "With years of experience in debate and diplomacy, Piyush Pariwakam joins the Advisory Board of YCCE X MUN, bringing invaluable expertise to the conference. His deep understanding of geopolitics, governance, and democratic values will provide crucial guidance to the organizing team, ensuring a high-caliber and impactful event. Piyush's strategic insights will shape an intellectually enriching MUN experience, elevating the discussions and fostering a meaningful debate for all participants.",
+  },
+  {
+    imgSrc: "/demo-mun.png",
+    name: "SPARSHIKA HADKE",
+    position: "Position",
+    description:
+      "Sparshika Hadke, a member of the Advisory Committee for YCCE X MUN, is an experienced leader with a strong background in community development and Model United Nations. Having served as the President and International Service Director of the Rotaract Club of Nagpur Downtown, she has spearheaded global service projects and youth empowerment initiatives. Her expertise in leadership, diplomacy, and organizing impactful events will offer valuable guidance to participants, ensuring a well-rounded and enriching MUN experience.",
+  },
+  {
+    imgSrc: "/demo-mun.png",
+    name: "DEVANSH GANDHI",
+    position: "Position",
+    description:
+      "Devansh Gandhi, a member of the Advisory Committee for YCCE X MUN, is a skilled leader with a passion for entrepreneurship and strategic decision-making. With a strong background in Model United Nations, having participated in over 20 conferences and won multiple awards, Devansh brings valuable experience in diplomacy, negotiation, and problem-solving. As a dynamic leader, he has excelled in managing teams and organizing events, showcasing his ability to foster collaboration and drive success. His expertise will inspire participants to develop critical thinking and leadership skills, ensuring a highly engaging and impactful MUN experience.",
+  },
+  {
+    imgSrc: "/demo-mun.png",
+    name: "Name",
+    position: "Position",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi recusandae neque tenetur molestias",
+  },
+  {
+    imgSrc: "/demo-mun.png",
+    name: "Name",
+    position: "Position",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi recusandae neque tenetur molestias",
   },
 ];
