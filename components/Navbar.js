@@ -8,8 +8,8 @@ import {
   hoverUnderlineGradient,
 } from "./ui/navigation-menu";
 import Image from "next/image";
-import MUNLogo from "../../public/images/mun-logo.jpg";
-import { NavbarLinksData } from "../../data";
+import MUNLogo from "../public/images/mun-logo.jpg";
+import { NavbarLinksData } from "../data";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,7 +54,7 @@ const Navbar = () => {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-6 w-6 mr-4"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -70,7 +70,7 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out ${
           isMenuOpen ? "max-h-[500px]" : "max-h-0"
         }`}
       >
@@ -80,6 +80,7 @@ const Navbar = () => {
               key={index}
               href={item.url}
               className="text-[#54250B] block hover:text-[#54250B] hover:bg-[#FFF4E2] py-2 px-4 rounded-md transition duration-200"
+              onClick={() => setIsMenuOpen(false)}
             >
               {item.title}
             </Link>
