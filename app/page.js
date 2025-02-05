@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import HeroSec from "../components/hero-sec";
 import InitialLoader from "../components/initial-loader";
 import Carousel from "./components/Carousel";
@@ -15,8 +15,10 @@ const Page = () => {
       <Navbar />
       <InitialLoader />
       <div className="page-container">
-        <div className="px-1 py-2 sm:px-2 sm:py-3  md:py-6 md:px-10">
+        <div className="">
           <HeroSec />
+        </div>
+        <div className="px-1 py-2 sm:px-2 sm:py-3  md:py-6 md:px-10">
           <Carousel />
           <ContentSection />
           <Sponsors />

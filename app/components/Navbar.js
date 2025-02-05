@@ -9,7 +9,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   return (
-    <nav className="bg-[#EFE7E4] p-4 shadow-md sticky top-0 z-50 ">
+    <nav className="bg-[#EFE7E4] p-4 shadow-md sticky top-0 z-50 nav-bar">
       <div className="container mx-auto flex justify-between items-center">
         <img src='/images/logo.jpg' alt="MUN YCCE LOGO" width="10%" height="10%" />
         <div className="hidden md:flex space-x-6">

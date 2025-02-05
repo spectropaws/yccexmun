@@ -28,10 +28,10 @@
   }
   
 
-button,
+/* button,
 p {
 	all: unset;
-}
+} */
 
 .NavigationMenuRoot {
 	position: relative;
