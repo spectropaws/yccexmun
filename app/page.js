@@ -2,17 +2,14 @@
 import HeroSec from "../components/hero-sec";
 import InitialLoader from "../components/initial-loader";
 import Carousel from "./components/Carousel";
-import Navbar from "./components/Navbar";
 import "./components/ui/styles.css";
 import ContentSection from "../components/ContentSection";
 import ImportantDates from "../components/ImportantDates";
-import Footer from "../components/Footer";
 import Sponsors from "../components/sponsors";
 
 const Page = () => {
   return (
     <>
-      <Navbar />
       <InitialLoader />
       <div className="page-container">
         <div className="">
@@ -25,7 +22,6 @@ const Page = () => {
           <ImportantDates />
         </div>
       </div>
-      <Footer />
     </>
   );
 };
