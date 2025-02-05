@@ -1,4 +1,4 @@
-import ChairsPage from "../components/Chairs/Chairs";
+import ChairsPage from "../../components/Chairs";
 
 export default function Chairs() {
   return (

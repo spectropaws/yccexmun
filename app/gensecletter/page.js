@@ -1,5 +1,5 @@
 
-import GenSec from "../components/GenSec";
+import GenSec from "../../components/GenSec";
 
 const GenSecPage = () => {
   return (

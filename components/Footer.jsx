@@ -35,7 +35,7 @@ const Footer = () => {
                   <span className="font-bold">{item.title}</span>
                   <a
                     href={item.url}
-                    className="font-medium text-[#EFE7E4] hover:text-[#2563EB] hover:underline underline-offset-2 transition-colors duration-200"
+                    className="font-medium text-[#54250B] hover:text-[#2563EB] hover:underline underline-offset-2 transition-colors duration-200"
                   >
                     {item.value}
                   </a>
