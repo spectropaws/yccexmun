@@ -65,32 +65,32 @@ const HeroSec = () => {
           modules={[EffectFade, Autoplay]}
           className="w-full h-[500px] md:h-auto"
         >
-          <SwiperSlide className="!w-full !h-[80vh] !overflow-hidden] relative">
+          <SwiperSlide className="!w-full !h-[80vh] !overflow-hidden relative">
             <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full scale-105 h-full"></div>
             <img
               src="https://swiperjs.com/demos/images/nature-1.jpg"
-              className="w-full h-full"
+              className="w-full h-full object-cover object-center"
             />
           </SwiperSlide>
           <SwiperSlide className="!w-full !h-[80vh] !overflow-hidden">
             <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full h-full scale-105"></div>
             <img
               src="https://swiperjs.com/demos/images/nature-2.jpg"
-              className="w-full h-full"
+              className="w-full h-full object-cover object-center"
             />
           </SwiperSlide>
           <SwiperSlide className="!w-full !h-[80vh] !overflow-hidden">
             <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full h-full scale-105"></div>
             <img
               src="https://swiperjs.com/demos/images/nature-3.jpg"
-              className="w-full h-full"
+              className="w-full h-full object-cover object-center"
             />
           </SwiperSlide>
           <SwiperSlide className="!w-full !h-[80vh] !overflow-hidden">
             <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full h-full scale-105"></div>
             <img
               src="https://swiperjs.com/demos/images/nature-4.jpg"
-              className="w-full h-full"
+              className="w-full h-full object-cover object-center"
             />
           </SwiperSlide>
         </Swiper>
@@ -136,7 +136,7 @@ const HeroSec = () => {
           <div className="py-6 px-10 border mx-1 border-[#54250B] bg-[#EFE7E4]/30 backdrop-blur-sm rounded-md relative">
             <div className="z-20 relative">
               <h5 className="md:text-2xl  text-nowrap">Book You seat Now</h5>
-              <button className="text-nowrap mx-auto group hover:-translate-y-2 hover:scale-110 hover:shadow-lg px-3 py-1 border rounded-lg bg-[#C2A597] hover:bg-transparent duration-200 border-[#54250B] mt-5 flex items-center gap-3">
+              <button className="text-nowrap mx-auto group hover:-translate-y-2 hover:scale-110 hover:shadow-lg px-3 py-1 border-2 rounded-[0.5rem] bg-[#C2A597] hover:bg-transparent duration-200 border-[#54250B] mt-5 flex items-center gap-3">
                 Book seat
                 <span className="w-8 overflow-hidden">
                   <div className="flex gap-4 -translate-x-[100%] group-hover:translate-x-[30%] duration-500">
