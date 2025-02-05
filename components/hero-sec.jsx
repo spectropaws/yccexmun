@@ -165,7 +165,7 @@ const HeroSec = () => {
           <div className="py-6 px-10 border mx-1 border-[#54250B] bg-[#EFE7E4]/30 backdrop-blur-sm rounded-md relative">
             <div className="z-20 relative">
               <h5 className="md:text-2xl  text-nowrap">Book You seat Now</h5>
-              <button className="text-nowrap mx-auto group hover:-translate-y-2 hover:scale-110 hover:shadow-lg px-3 py-1 border-2 rounded-[0.5rem] bg-[#C2A597] hover:bg-transparent duration-200 border-[#54250B] mt-5 flex items-center gap-3">
+              <button className="text-nowrap mx-auto group hover:-translate-y-2 hover:scale-110 hover:shadow-lg px-3 py-1 border rounded-[0.5rem] bg-[#C2A597] hover:bg-transparent duration-200 border-[#54250B] mt-5 flex items-center gap-3">
                 Book seat
                 <span className="w-8 overflow-hidden">
                   <div className="flex gap-4 -translate-x-[100%] group-hover:translate-x-[30%] duration-500">
