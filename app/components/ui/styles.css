@@ -30,10 +30,43 @@
   }
   
 
-button,
-p {
-	all: unset;
-}
+/* Button default styles */
+.custom-underline-gradient {
+	position: relative;
+	padding: 10px 20px;
+	border-radius: 8px;
+	background-color: #C2A597; /* You can customize the background color */
+	color: white;
+	font-size: 1rem;
+	font-weight: 500;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	transition: all 0.3s ease; /* Smooth transition for background and border */
+  }
+  
+  /* Adding the gradient border effect on hover */
+  .custom-underline-gradient::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(to right, #FF7E5F, #feb47b); /* Gradient color */
+	z-index: -1; /* Places the gradient behind the text */
+	transition: all 0.3s ease;
+	border-radius: 8px; /* Same as the button to avoid sharp edges */
+	transform: scaleX(0); /* Initially scale the gradient to zero */
+	transform-origin: bottom right; /* Start the scaling from the right */
+  }
+  
+  /* On hover, expand the gradient to the full border */
+  .custom-underline-gradient:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+  }
+  
 
 .NavigationMenuRoot {
 	position: relative;
@@ -130,13 +163,11 @@ p {
 	  gap: 40%;
 	}
   }
-
-/* Custom gradient underline */
 @layer components {
 	.gradient-underline {
 	  position: relative;
 	  display: inline-block;
-	  font-size: 1.5rem; /* Adjust font size */
+	  font-size: 1.5rem;
 	}
   
 	.gradient-underline::after {
@@ -145,8 +176,8 @@ p {
 	  bottom: 0;
 	  left: 0;
 	  width: 100%;
-	  height: 3px; /* Thickness of the underline */
-	  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient */
+	  height: 3px;
+	  background: linear-gradient(to right, #ff7e5f, #feb47b);
 	  transform: scaleX(0);
 	  transform-origin: bottom right;
 	  transition: transform 0.7s ease-out;
@@ -156,7 +187,32 @@ p {
 	  transform: scaleX(1);
 	  transform-origin: bottom left;
 	}
-  }
+	.custom-underline-gradient {
+		position: relative;
+		display: inline-block;
+		font-size: 1.5rem; /* Adjust font size */
+	}
+
+	.custom-underline-gradient::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 3px; /* Thickness of the underline */
+		background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient */
+		transform: scaleX(0);
+		transform-origin: bottom right;
+		transition: transform 0.7s ease-out;
+	}
+
+	.custom-underline-gradient.active::after {
+		transform: scaleX(1);
+		transform-origin: bottom left;
+	}
+}
+
+
   
 
 .NavigationMenuIndicator {
@@ -401,3 +457,46 @@ p {
 		opacity: 0;
 	}
 }
+
+.gen-sec-letter-container {
+  background-image: url('/images/letter-overlay.png');
+  
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+
+.gen-sec-letter {
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 10;
+}
+
+.gen-sec-letter h2 {
+  font-family: 'Great Vibes', cursive;
+  font-weight: normal;
+  color: #54250B;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 500px) {
+  .gen-sec-letter h2 {
+    font-size: 200%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gen-sec-letter h2 {
+    font-size: 300%;
+  }
+}
+
+}
+

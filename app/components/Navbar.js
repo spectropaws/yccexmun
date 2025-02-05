@@ -18,8 +18,8 @@ const Navbar = () => {
       url: "/",
     },
     {
-      title: "Chairs",
-      url: "/Chairs.js",
+      title: "Commitees",
+      url: "/chairs",
     },
     {
       title: "Contact",
