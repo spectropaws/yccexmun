@@ -55,7 +55,7 @@ export default function Page() {
   );
 }
 
-export function MemberCard({ member }) {
+function MemberCard({ member }) {
   return (
     <div className="flex flex-col items-center justify-evenly max-w-xs mx-auto border p-2 rounded-lg border-gray-300">
       <img
