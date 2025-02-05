@@ -26,8 +26,3 @@ export function NavigationMenuLink({ children, className, href = "" }) {
     </Link>
   );
 }
-
-
-export const navigationMenuTriggerStyle = () => {
-  return "text-[#54250B] hover:bg-[#FFF4E2] hover:text-[#54250B] py-2 px-4 rounded-md transition duration-200"; 
-};
