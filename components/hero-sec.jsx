@@ -3,13 +3,15 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ArrowRight, ArrowUpRight, Dot } from "lucide-react";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 
 const HeroSec = () => {
+  const [navHeight, setNavHeight] = useState(0);
+
   const card = useRef(null);
   const recEff = useRef(null);
   const dates = useRef(null);
@@ -46,6 +48,18 @@ const HeroSec = () => {
     });
   });
 
+  useEffect(() => {
+    setNavHeight(document.querySelector(".nav-bar").offsetHeight);
+    function handleResize() {
+      setNavHeight(document.querySelector(".nav-bar").offsetHeight);
+    }
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="bg-[#EFE7E4] w-full rounded-2xl relative">
       <div className="">
@@ -63,30 +77,42 @@ const HeroSec = () => {
             disableOnInteraction: false,
           }}
           modules={[EffectFade, Autoplay]}
-          className="w-full h-[500px] md:h-auto"
+          className="w-full h-[550px] md:h-auto"
         >
-          <SwiperSlide className="!w-full !h-[80vh] !overflow-hidden relative">
+          <SwiperSlide
+            className={`!w-full !overflow-hidden relative`}
+            style={{ height: `calc(100vh - ${navHeight}px)` }}
+          >
             <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full scale-105 h-full"></div>
             <img
               src="https://swiperjs.com/demos/images/nature-1.jpg"
               className="w-full h-full object-cover object-center"
             />
           </SwiperSlide>
-          <SwiperSlide className="!w-full !h-[80vh] !overflow-hidden">
+          <SwiperSlide
+            className={`!w-full !overflow-hidden relative`}
+            style={{ height: `calc(100vh - ${navHeight}px)` }}
+          >
             <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full h-full scale-105"></div>
             <img
               src="https://swiperjs.com/demos/images/nature-2.jpg"
               className="w-full h-full object-cover object-center"
             />
           </SwiperSlide>
-          <SwiperSlide className="!w-full !h-[80vh] !overflow-hidden">
+          <SwiperSlide
+            className={`!w-full !overflow-hidden relative`}
+            style={{ height: `calc(100vh - ${navHeight}px)` }}
+          >
             <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full h-full scale-105"></div>
             <img
               src="https://swiperjs.com/demos/images/nature-3.jpg"
               className="w-full h-full object-cover object-center"
             />
           </SwiperSlide>
-          <SwiperSlide className="!w-full !h-[80vh] !overflow-hidden">
+          <SwiperSlide
+            className={`!w-full !overflow-hidden relative`}
+            style={{ height: `calc(100vh - ${navHeight}px)` }}
+          >
             <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full h-full scale-105"></div>
             <img
               src="https://swiperjs.com/demos/images/nature-4.jpg"
@@ -118,21 +144,24 @@ const HeroSec = () => {
             </div>
           </div>
         </div>
-        <div ref={dates} className="flex flex-col justify-center items-center">
-          <div className="flex items-center gap-4 mt-5">
-            <span className="p-3 border border-[#54250B] rounded-sm text-l sm:text-xl md:text-2xl font-bold text-[#54250B]">
+        <div
+          ref={dates}
+          className="flex flex-col justify-center items-center border-b border-t px-6 py-3 mt-5"
+        >
+          <div className="flex items-center gap-4">
+            <span className="p-2 border border-[#54250B] rounded-sm text-l sm:text-xl md:text-2xl font-bold text-[#54250B]">
               22
             </span>
             <span className="text-2xl sm:text-3xl md:text-4xl">-</span>
-            <span className="p-3 border border-[#54250B] rounded-sm text-lg sm:text-xl md:text-2xl font-bold text-[#54250B]">
+            <span className="p-2 border border-[#54250B] rounded-sm text-lg sm:text-xl md:text-2xl font-bold text-[#54250B]">
               23
             </span>
           </div>
-          <div className="text-lg sm:text-xl md:text-3xl tracking-tighter font-bold text-[#54250B]">
+          <div className="text-lg mt-1 sm:text-xl md:text-3xl tracking-tighter font-bold text-[#54250B]">
             MARCH
           </div>
         </div>
-        <div ref={card} className="mt-3 md:mt-5 overflow-hidden px-1">
+        <div ref={card} className="mt-5 md:mt-5 overflow-hidden px-1">
           <div className="py-6 px-10 border mx-1 border-[#54250B] bg-[#EFE7E4]/30 backdrop-blur-sm rounded-md relative">
             <div className="z-20 relative">
               <h5 className="md:text-2xl  text-nowrap">Book You seat Now</h5>

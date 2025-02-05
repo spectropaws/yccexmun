@@ -21,7 +21,7 @@ const MemberCard = ({ imgSrc, position, name, description, index }) => {
         <h5 className="text-3xl font-semibold tracking-wide w-max relative after:absolute after:content-[''] after:h-1 after:w-0 group-hover:after:w-full after:duration-300 after:bg-black after:left-0 after:bottom-0">
           {name}
         </h5>
-        <p className={`mt-5 lg:px-10 text-justify`}>{description}</p>
+        <p className={`mt-5 text-justify`}>{description}</p>
       </div>
     </div>
   );
