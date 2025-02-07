@@ -45,8 +45,7 @@ export const NavbarLinksData = [
   { url: "/about", title: "About Us" },
   { url: "/#schedule", title: "Event Schedule" },
   { url: "/", title: "Commitee" },
-  { url: "/register", title: "Register" },
-
+  // { url: "/register", title: "Register" },
 ];
 
 //  Content Section
@@ -178,16 +177,16 @@ export const advisoryBoard = [
   },
   {
     imgSrc: "/demo-mun.png",
-    name: "Name",
+    name: "NAINCY PANDE ",
     position: "Position",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi recusandae neque tenetur molestias",
+      "Naincy Pande, an accomplished orator and public speaker, brings her expertise in parliamentary debates and declamation to the Advisory Board of YCCE X MUN. With accolades at state and district levels, along with a strong command of communication and leadership, she ensures a high-quality, intellectually stimulating conference. Her experience will guide participants in mastering diplomacy, structured argumentation, and impactful resolutions. Passionate about fostering meaningful discourse, she strives to create an environment where delegates can refine their perspectives and develop confidence in global affairs.",
   },
   {
     imgSrc: "/demo-mun.png",
-    name: "Name",
+    name: "MAANUKHRAJ SINGH ALAG",
     position: "Position",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi recusandae neque tenetur molestias",
+      "Maanukhraj Singh Alag, a seasoned Model United Nations (MUN) expert, brings a wealth of experience to the Advisory Committee of YCCE X MUN. Having served as the Secretary General at Cosmopolitan Revolutionary Model United Nations, he has demonstrated exceptional leadership in organizing large-scale conferences. As a Best Delegate at Apex MUN and with participation in renowned international debate competitions, Maanukhraj's expertise in diplomacy, critical thinking, and negotiation will guide delegates in navigating complex global issues and crafting impactful resolutions. His strategic insights and experience will ensure a dynamic and engaging MUN experience.",
   },
 ];

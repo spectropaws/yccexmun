@@ -149,7 +149,7 @@ const HeroSec = () => {
           className="flex flex-col justify-center items-center border-b border-t px-6 py-3 mt-5"
         >
           <div className="flex items-center gap-4">
-            <span className="p-2 border border-[#54250B] rounded-sm text-l sm:text-xl md:text-2xl font-bold text-[#54250B]">
+            <span className="p-2 border border-[#54250B] rounded-sm text-lg sm:text-xl md:text-2xl font-bold text-[#54250B]">
               22
             </span>
             <span className="text-2xl sm:text-3xl md:text-4xl">-</span>
@@ -165,7 +165,12 @@ const HeroSec = () => {
           <div className="py-6 px-10 border mx-1 border-[#54250B] bg-[#EFE7E4]/30 backdrop-blur-sm rounded-md relative">
             <div className="z-20 relative">
               <h5 className="md:text-2xl  text-nowrap">Book You seat Now</h5>
-              <button className="text-nowrap mx-auto group hover:-translate-y-2 hover:scale-110 hover:shadow-lg px-3 py-1 border rounded-[0.5rem] bg-[#C2A597] hover:bg-transparent duration-200 border-[#54250B] mt-5 flex items-center gap-3">
+              <button
+                className="text-nowrap mx-auto group hover:-translate-y-2 hover:scale-110 hover:shadow-lg px-3 py-1 border rounded-[0.5rem] bg-[#C2A597] hover:bg-transparent duration-200 border-[#54250B] mt-5 flex items-center gap-3"
+                onClick={() =>
+                  document.getElementById("hero_modal").showModal()
+                }
+              >
                 Book seat
                 <span className="w-8 overflow-hidden">
                   <div className="flex gap-4 -translate-x-[100%] group-hover:translate-x-[30%] duration-500">
@@ -183,6 +188,19 @@ const HeroSec = () => {
                     </div>
                   </div>
                 </span>
+{/* ---------------------------Dialog Box--------------------- */}
+                <dialog id="hero_modal" className="modal">
+                  <div className="modal-box bg-white">
+                    <form method="dialog">
+                      <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                        ✕
+                      </button>
+                    </form>
+                    <h3 className="font-bold text-lg text-start">Register Here</h3>
+                    <p className="py-4">Iframe content Here</p>
+                  </div>
+                         
+                </dialog>
               </button>
             </div>
             <div ref={earth} className="absolute left-20 top-0 z-0">

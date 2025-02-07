@@ -10,6 +10,8 @@ import {
 import Image from "next/image";
 import MUNLogo from "../../public/images/mun-logo.jpg";
 import { NavbarLinksData } from "../../data";
+import RegisterDialog from "../../components/Register/register-dialog";
+import { ArrowRight } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +20,6 @@ const Navbar = () => {
   return (
     <nav className="bg-[#EFE7E4] p-4 shadow-md sticky top-0 z-50 nav-bar">
       <div className="container mx-auto flex justify-between items-center">
-        
         {/* MUN YCCE logo */}
         <Image
           src={MUNLogo}
@@ -44,6 +45,25 @@ const Navbar = () => {
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               ))}
+              <button
+                className="border px-4 py-1 text-black bg-[#C2A597] rounded-sm -mt-1 hover:bg-transparent hover:scale-105 hover:shadow-md duration-300"
+                onClick={() => document.getElementById("nav_modal").showModal()}
+              >
+                Rgister
+              </button>
+
+              {/* ---------------------------Dialog--------------------- */}
+              <dialog id="nav_modal" className="modal">
+                <div className="modal-box bg-white">
+                  <form method="dialog">
+                    <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                      ✕
+                    </button>
+                  </form>
+                  <h3 className="font-bold text-lg">Rigister here</h3>
+                  <p className="py-4">Iframe content Here</p>
+                </div>
+              </dialog>
             </div>
           </NavigationMenu>
         </div>
@@ -84,6 +104,25 @@ const Navbar = () => {
               {item.title}
             </Link>
           ))}
+          <button
+            className="border px-4 py-1 text-black bg-[#C2A597] rounded-sm -mt-1 hover:bg-transparent hover:scale-105 hover:shadow-md duration-300"
+            onClick={() => document.getElementById("nav_mobile_modal").showModal()}
+          >
+            Rgister
+          </button>
+
+          {/* ---------------------------Dialog */}
+          <dialog id="nav_mobile_modal" className="modal">
+            <div className="modal-box bg-white">
+              <form method="dialog">
+                <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                  ✕
+                </button>
+              </form>
+              <h3 className="font-bold text-lg">Rigister here</h3>
+              <p className="py-4">Iframe content Here</p>
+            </div>
+          </dialog>
         </div>
       </div>
     </nav>
