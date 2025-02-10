@@ -85,12 +85,13 @@ const HeroSec = () => {
           modules={[EffectFade, Autoplay]}
           className="w-full h-[550px] md:h-auto"
         >
-          {carouselImages.map((src) => {
+          {carouselImages.map((src, index) => {
             if (src.startsWith("/carousel/img")) {
               return (
                 <SwiperSlide
                   className={`!w-full !overflow-hidden relative`}
                   style={{ height: `calc(100vh - ${navHeight}px)` }}
+                  key={index}
                 >
                   <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full scale-105 h-full"></div>
                   <img
@@ -104,44 +105,14 @@ const HeroSec = () => {
                 <SwiperSlide
                   className={`!w-full !overflow-hidden relative`}
                   style={{ height: `calc(100vh - ${navHeight}px)` }}
+                  key={index}
                 >
                   <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full scale-105 h-full"></div>
-                  <video src={src} autoPlay loop muted lazyLoad></video>
+                  <video src={src} autoPlay loop muted></video>
                 </SwiperSlide>
               );
             }
           })}
-
-          {/* <SwiperSlide
-            className={`!w-full !overflow-hidden relative`}
-            style={{ height: `calc(100vh - ${navHeight}px)` }}
-          >
-            <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full h-full scale-105"></div>
-            <img
-              src="https://swiperjs.com/demos/images/nature-2.jpg"
-              className="w-full h-full object-cover object-center"
-            />
-          </SwiperSlide>
-          <SwiperSlide
-            className={`!w-full !overflow-hidden relative`}
-            style={{ height: `calc(100vh - ${navHeight}px)` }}
-          >
-            <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full h-full scale-105"></div>
-            <img
-              src="https://swiperjs.com/demos/images/nature-3.jpg"
-              className="w-full h-full object-cover object-center"
-            />
-          </SwiperSlide>
-          <SwiperSlide
-            className={`!w-full !overflow-hidden relative`}
-            style={{ height: `calc(100vh - ${navHeight}px)` }}
-          >
-            <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full h-full scale-105"></div>
-            <img
-              src="https://swiperjs.com/demos/images/nature-4.jpg"
-              className="w-full h-full object-cover object-center"
-            />
-          </SwiperSlide> */}
         </Swiper>
       </div>
 
@@ -211,29 +182,29 @@ const HeroSec = () => {
                     </div>
                   </div>
                 </span>
-                {/* ---------------------------Dialog Box--------------------- */}
-                <dialog id="hero_modal" className="modal">
-                  <div className="modal-box h-[700px] bg-white">
-                    <form method="dialog">
-                      <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
-                        ✕
-                      </button>
-                    </form>
-                    <h3 className="font-bold text-lg text-start">
-                      Register Here
-                    </h3>
-                    <div>
-                      <iframe
-                        src="https://konfhub.com/widget/ycce-x-mun?desc=false&secondaryBg=F7F7F7&ticketBg=F7F7F7&borderCl=F7F7F7&bg=FFFFFF&fontColor=572148&ticketCl=572148&btnColor=fb5850&fontFamily=Prompt&borderRadius=10"
-                        id="konfhub-widget"
-                        title="Register for YCCE X MUN"
-                        width="100%"
-                        height="570"
-                      ></iframe>
-                    </div>
-                  </div>
-                </dialog>
               </button>
+              {/* ---------------------------Dialog Box--------------------- */}
+              <dialog id="hero_modal" className="modal">
+                <div className="modal-box h-[700px] bg-white">
+                  <form method="dialog">
+                    <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                      ✕
+                    </button>
+                  </form>
+                  <h3 className="font-bold text-lg text-start">
+                    Register Here
+                  </h3>
+                  <div>
+                    <iframe
+                      src="https://konfhub.com/widget/ycce-x-mun?desc=false&secondaryBg=F7F7F7&ticketBg=F7F7F7&borderCl=F7F7F7&bg=FFFFFF&fontColor=572148&ticketCl=572148&btnColor=fb5850&fontFamily=Prompt&borderRadius=10"
+                      id="konfhub-widget"
+                      title="Register for YCCE X MUN"
+                      width="100%"
+                      height="570"
+                    ></iframe>
+                  </div>
+                </div>
+              </dialog>
             </div>
             <div ref={earth} className="absolute left-20 top-0 z-0">
               <img src="/earth.png" alt="earth" className="w-32" />
