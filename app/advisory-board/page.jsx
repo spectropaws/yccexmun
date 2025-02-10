@@ -4,8 +4,8 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="md:p-10 p-5 w-[99vw]">
-      <h3 className="text-5xl font-bold mx-20">Advisory Board</h3>
+    <div className="md:p-10 p-5">
+      <h3 className="text-4xl font-bold mx-20 text-center bg-gradient mt-5">Advisory Board</h3>
       <div className="mt-10 lg:px-20 justify-center">
         {advisoryBoard.map((data, index) => (
           <MemberCard
