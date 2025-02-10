@@ -108,7 +108,13 @@ const HeroSec = () => {
                   key={index}
                 >
                   <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full scale-105 h-full"></div>
-                  <video src={src} autoPlay loop muted></video>
+                  <video
+                    src={src}
+                    className="w-full h-full object-cover object-center"
+                    autoPlay
+                    loop
+                    muted
+                  ></video>
                 </SwiperSlide>
               );
             }
