@@ -190,3 +190,18 @@ export const advisoryBoard = [
       "Maanukhraj Singh Alag, a seasoned Model United Nations (MUN) expert, brings a wealth of experience to the Advisory Committee of YCCE X MUN. Having served as the Secretary General at Cosmopolitan Revolutionary Model United Nations, he has demonstrated exceptional leadership in organizing large-scale conferences. As a Best Delegate at Apex MUN and with participation in renowned international debate competitions, Maanukhraj's expertise in diplomacy, critical thinking, and negotiation will guide delegates in navigating complex global issues and crafting impactful resolutions. His strategic insights and experience will ensure a dynamic and engaging MUN experience.",
   },
 ];
+
+export const carouselImages = [
+  "/carousel/video1.mp4",
+  "/carousel/img1.jpg",
+  "/carousel/img2.jpg",
+  "/carousel/video2.mp4",
+  "/carousel/img3.jpg",
+  "/carousel/img4.jpg",
+  "/carousel/video3.mp4",
+  "/carousel/img5.jpg",
+  "/carousel/img6.jpg",
+  "/carousel/video4.mp4",
+  "/carousel/img7.jpg",
+  "/carousel/img8.png",
+];

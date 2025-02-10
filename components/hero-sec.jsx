@@ -4,10 +4,11 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ArrowRight, ArrowUpRight, Dot } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
+import { carouselImages } from "../data";
 
 const HeroSec = () => {
   const [navHeight, setNavHeight] = useState(0);
@@ -60,6 +61,11 @@ const HeroSec = () => {
     };
   }, []);
 
+  function getSlideActive() {
+    const swiperSlide = useSwiperSlide();
+    return swiperSlide.isActive;
+  }
+
   return (
     <div className="bg-[#EFE7E4] w-full rounded-2xl relative">
       <div className="">
@@ -79,17 +85,34 @@ const HeroSec = () => {
           modules={[EffectFade, Autoplay]}
           className="w-full h-[550px] md:h-auto"
         >
-          <SwiperSlide
-            className={`!w-full !overflow-hidden relative`}
-            style={{ height: `calc(100vh - ${navHeight}px)` }}
-          >
-            <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full scale-105 h-full"></div>
-            <img
-              src="https://swiperjs.com/demos/images/nature-1.jpg"
-              className="w-full h-full object-cover object-center"
-            />
-          </SwiperSlide>
-          <SwiperSlide
+          {carouselImages.map((src) => {
+            if (src.startsWith("/carousel/img")) {
+              return (
+                <SwiperSlide
+                  className={`!w-full !overflow-hidden relative`}
+                  style={{ height: `calc(100vh - ${navHeight}px)` }}
+                >
+                  <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full scale-105 h-full"></div>
+                  <img
+                    src={src}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </SwiperSlide>
+              );
+            } else {
+              return (
+                <SwiperSlide
+                  className={`!w-full !overflow-hidden relative`}
+                  style={{ height: `calc(100vh - ${navHeight}px)` }}
+                >
+                  <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full scale-105 h-full"></div>
+                  <video src={src} autoPlay loop muted lazyLoad></video>
+                </SwiperSlide>
+              );
+            }
+          })}
+
+          {/* <SwiperSlide
             className={`!w-full !overflow-hidden relative`}
             style={{ height: `calc(100vh - ${navHeight}px)` }}
           >
@@ -118,7 +141,7 @@ const HeroSec = () => {
               src="https://swiperjs.com/demos/images/nature-4.jpg"
               className="w-full h-full object-cover object-center"
             />
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </div>
 
@@ -188,18 +211,27 @@ const HeroSec = () => {
                     </div>
                   </div>
                 </span>
-{/* ---------------------------Dialog Box--------------------- */}
+                {/* ---------------------------Dialog Box--------------------- */}
                 <dialog id="hero_modal" className="modal">
-                  <div className="modal-box bg-white">
+                  <div className="modal-box h-[700px] bg-white">
                     <form method="dialog">
                       <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                         ✕
                       </button>
                     </form>
-                    <h3 className="font-bold text-lg text-start">Register Here</h3>
-                    <p className="py-4">Iframe content Here</p>
+                    <h3 className="font-bold text-lg text-start">
+                      Register Here
+                    </h3>
+                    <div>
+                      <iframe
+                        src="https://konfhub.com/widget/ycce-x-mun?desc=false&secondaryBg=F7F7F7&ticketBg=F7F7F7&borderCl=F7F7F7&bg=FFFFFF&fontColor=572148&ticketCl=572148&btnColor=fb5850&fontFamily=Prompt&borderRadius=10"
+                        id="konfhub-widget"
+                        title="Register for YCCE X MUN"
+                        width="100%"
+                        height="570"
+                      ></iframe>
+                    </div>
                   </div>
-                         
                 </dialog>
               </button>
             </div>
