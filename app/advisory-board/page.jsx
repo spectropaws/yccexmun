@@ -10,7 +10,7 @@ const page = () => {
         {advisoryBoard.map((data, index) => (
           <MemberCard
             imgSrc={data.imgSrc}
-            index={index}
+            key={index}
             position={data.position}
             name={data.name}
             description={data.description}

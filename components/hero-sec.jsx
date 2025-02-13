@@ -191,7 +191,7 @@ const HeroSec = () => {
               </button>
               {/* ---------------------------Dialog Box--------------------- */}
               <dialog id="hero_modal" className="modal">
-                <div className="modal-box h-[700px] bg-white">
+                <div className="modal-box max-h-[700px] bg-white">
                   <form method="dialog">
                     <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                       ✕

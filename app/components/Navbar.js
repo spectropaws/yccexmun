@@ -34,11 +34,12 @@ const Navbar = () => {
               {NavbarLinksData.map((item, index) => (
                 <NavigationMenuItem key={index}>
                   <NavigationMenuLink
-                    className={
-                      item.url == "/register"
-                        ? "text-[#54250B] hover:bg-[#FFF4E2] hover:text-[#54250B] py-2 px-4 rounded-md transition duration-200 border-2 border-[#54250B] hover:border-[#FFF4E2] hover:scale-105 transform"
-                        : hoverUnderlineGradient()
-                    }
+                    // className={
+                    //   item.url == "/register"
+                    //     ? "text-[#54250B] hover:bg-[#FFF4E2] hover:text-[#54250B] py-2 px-4 rounded-md transition duration-200 border-2 border-[#54250B] hover:border-[#FFF4E2] hover:scale-105 transform"
+                    //     : hoverUnderlineGradient()
+                    // }
+                    className={hoverUnderlineGradient()}
                     href={item.url}
                   >
                     {item.title}
