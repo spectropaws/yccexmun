@@ -49,7 +49,7 @@ const Navbar = () => {
                 className="text-[#54250B] hover:bg-[#FFF4E2] hover:text-[#54250B] -mt-2 py-2 px-4 rounded-md transition duration-200 border-2 border-[#54250B] hover:border-[#FFF4E2] hover:scale-105 transform"
                 onClick={() => document.getElementById("nav_modal").showModal()}
               >
-                Rgister
+                Register
               </button>
 
               {/* ---------------------------Dialog--------------------- */}
@@ -60,7 +60,7 @@ const Navbar = () => {
                       ✕
                     </button>
                   </form>
-                  <h3 className="font-bold text-lg">Rigister here</h3>
+                  <h3 className="font-bold text-lg">Register here</h3>
                   <div>
                     <iframe
                       src="https://konfhub.com/widget/ycce-x-mun?desc=false&secondaryBg=F7F7F7&ticketBg=F7F7F7&borderCl=F7F7F7&bg=FFFFFF&fontColor=572148&ticketCl=572148&btnColor=fb5850&fontFamily=Prompt&borderRadius=10"
@@ -129,7 +129,7 @@ const Navbar = () => {
                   ✕
                 </button>
               </form>
-              <h3 className="font-bold text-lg">Rigister here</h3>
+              <h3 className="font-bold text-lg">Register here</h3>
               <div>
                 <iframe
                   src="https://konfhub.com/widget/ycce-x-mun?desc=false&secondaryBg=F7F7F7&ticketBg=F7F7F7&borderCl=F7F7F7&bg=FFFFFF&fontColor=572148&ticketCl=572148&btnColor=fb5850&fontFamily=Prompt&borderRadius=10"
