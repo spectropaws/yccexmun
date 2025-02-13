@@ -3,7 +3,7 @@ import Link from "next/link";
 const GenSecLetter = () => {
   const chunkedSlides = [
     {
-      image: "images/image1.jpg",
+      image: "images/Kushal1.jpg",
       name: "Kushal Javkhedkar"
     }
   ];
