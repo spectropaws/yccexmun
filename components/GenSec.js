@@ -1,5 +1,3 @@
-
-
 export default function LetterPage() {
   const GenSecLetter = () => {
     const chunkedSlides = [
@@ -11,24 +9,36 @@ export default function LetterPage() {
 
     return (
       <div className="container mx-auto p-4">
-        <div className="gen-sec-letter-container shadow relative">
+        <div className="gen-sec-letter-container shadow-md relative">
           <section className="gen-sec-letter flex flex-col md:flex-row items-start justify-between">
             <div className="text-left w-full md:w-1/2 pr-4 mb-4 md:mb-0">
-              <h2 className="text-2xl font-bold mt-4 mb-4">Message from the General Secretary</h2>
+            <h2 className="text-2xl font-bold mt-8 mb-8"> <span className="text-6xl font-bold">“</span>Message  from the General Secretary</h2>
+            <p></p>
+          
+              <p className="mt-4 font-semibold">Dear Delegates and Honored Guests,</p>
+              <br />
               <p>
-                Dear members, <br />
-                Welcome to our organization. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />
-
-                Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer sit amet est et sapien ullamcorper pharetra. Aenean ac felis vel velit aliquet suscipit. Phasellus ac libero purus. Fusce risus nisl, viverra et, tempor aliquet, tincidunt sed, est. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam.<br /><br />
-
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris magna. Donec nulla ante, auctor eu, consequat vitae, eleifend ac, enim. Etiam vel augue. Vivamus sit amet nulla. Integer vitae libero ac risus egestas placerat. Nullam mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur pretium tincidunt lacus.<br />
-
-                Sed auctor, libero at volutpat feugiat, velit ante condimentum arcu, vitae viverra urna est eu velit. Ut faucibus sollicitudin magna. Integer ac leo. Suspendisse potenti. Aliquam erat volutpat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed lectus. Integer euismod lacus luctus magna.<br /><br />
-
-                Ut nec arcu. Ut sit amet felis ullamcorper, scelerisque ligula et, lacinia dui. Donec dui lectus, auctor ac varius et, euismod ac sapien. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Phasellus nec erat. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.<br /><br />
-
-                Mauris sit amet massa vitae tortor condimentum lacinia. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.<br />
+                I take immense pride in welcoming you to the maiden edition of YCCE X MUN, an event launched in honor of the Ruby Jubilee Celebrations of Yeshwantrao Chavan College of Engineering. At this point where YCCE marks its 40 years of excellence, we set out on a journey beyond academics—diplomacy, leadership, and global awareness.
               </p>
+              <br />
+              <p>
+                Model United Nations is just a simulation that has much more to it: it is a stage where young leaders hone their critical thinking skills, learn negotiation techniques, and craft solutions in committee rooms that are still viable beyond those rooms. Words have power, challenges are presented to perceptions, and consensus is built here.
+              </p>
+              <br />
+              <p>
+                It's not just about debating policies; it's embracing the ideals of cooperation, mutual respect, and global responsibility. It's the understanding that leadership is not authority but the impact one creates through dialogue and action.
+              </p>
+              <br />
+              <p>
+                As you step into this conference, I urge you to do so with conviction, listen with an open mind, and debate with the intent of progress. Let this MUN be a reminder that the world is shaped by those who dare to question, who choose to engage, and who believe in the power of ideas.
+              </p>
+              <br />
+              <p>
+                I extend my gratitude to all of you who have made this event possible. I hope that this edition of YCCE X MUN sets the foundation for a tradition of impactful discussions and visionary leadership.
+              </p>
+              <br />
+              <p>Wishing you all an inspiring and transformative experience.</p>
+              <br />
               <h3 className="text-right font-bold right-0 bottom-3 mb-4">Kushal Javkhedkar</h3>
             </div>
             

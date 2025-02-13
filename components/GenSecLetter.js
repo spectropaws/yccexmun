@@ -16,14 +16,13 @@ const GenSecLetter = () => {
             <h2 className="text-2xl font-bold mt-8 mb-8"> <span className="text-6xl font-bold">“</span>Message  from the General Secretary</h2>
             <p>
               
-              <span className="font-semibold">Dear members</span>, <br />
-              Welcome to our organization. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              <span className="font-semibold">Dear Delegates and Honored Guests,</span><br />
+              I take immense pride in welcoming you to the maiden edition of YCCE X MUN, an event launched in honor of the Ruby Jubilee Celebrations of Yeshwantrao Chavan College of Engineering.
+        
               <br /><br />
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum....
-            </p><Link href="/gensecletter">
-              <button className="read-more-btn mt-4">Read More</button>
-            </Link>
+              At this point where YCCE marks its 40 years of excellence, we set out on a journey beyond academics—diplomacy, leadership, and global awareness    ....<Link href="/gensecletter">
+              <button className="read-more-btn">Read More</button>
+            </Link></p>
           </div>
           <div className="flex-1 w-full max-w-[350px] mx-auto">
             {chunkedSlides.map((chunk, index) => (
@@ -51,3 +50,4 @@ const GenSecLetter = () => {
 };
 
 export default GenSecLetter;
+
