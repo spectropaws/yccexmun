@@ -118,7 +118,7 @@ const Navbar = () => {
               document.getElementById("nav_mobile_modal").showModal()
             }
           >
-            Rgister
+            Register
           </button>
 
           {/* ---------------------------Dialog */}
