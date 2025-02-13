@@ -44,7 +44,7 @@ export const FooterLinkData = [
 export const NavbarLinksData = [
   { url: "/about", title: "About Us" },
   { url: "/#schedule", title: "Event Schedule" },
-  { url: "/", title: "Commitee" },
+  { url: "/chairs", title: "Commitee" },
   // { url: "/register", title: "Register" },
 ];
 
@@ -185,6 +185,7 @@ export const advisoryBoard = [
   {
     imgSrc: "/demo-mun.png",
     name: "MAANUKHRAJ SINGH ALAG",
+    name: "MAANUKHRAJ SINGH ALAG",
     position: "Position",
     description:
       "Maanukhraj Singh Alag, a seasoned Model United Nations (MUN) expert, brings a wealth of experience to the Advisory Committee of YCCE X MUN. Having served as the Secretary General at Cosmopolitan Revolutionary Model United Nations, he has demonstrated exceptional leadership in organizing large-scale conferences. As a Best Delegate at Apex MUN and with participation in renowned international debate competitions, Maanukhraj's expertise in diplomacy, critical thinking, and negotiation will guide delegates in navigating complex global issues and crafting impactful resolutions. His strategic insights and experience will ensure a dynamic and engaging MUN experience.",
@@ -204,4 +205,33 @@ export const carouselImages = [
   "/carousel/video4.mp4",
   "/carousel/img7.jpg",
   "/carousel/img8.png",
+];
+
+//Chairs Data
+export const slides = [
+  { name: 'Piyush Pariwakam', image: '/images/Piyush.jpg', description: 'Piyush Pariwakam, a seasoned debater with over five years of MUN experience, excels in all roles. He serves as Ambassador of the University Grants Commission, India, advocating Equality, Equity, and Democratic Principles. Get ready for an engaging and insightful AIPPM at YCCE X MUN!' },
+  { name: 'Varad Dorlikar', image: '/images/Varad.jpg', description: 'Varad Dorlikar, a seasoned MUN veteran with 60+ conferences, excels in Indian committees, legal discourse, and parliamentary debates. With experience as Secretary General, President, and Chairperson, he ensures impactful debates and resolutions at YCCE X MUN.' },
+  { name: 'Swara Dalvi', image: '/images/Swara.jpg', description: 'Swara Dalvi, with exceptional skills in diplomacy, legal reasoning, and international affairs, is a powerhouse in the MUN circuit. A distinguished orator and accomplished MUNer, she ensures balanced, thought-provoking debates and an intellectually charged experience at UNHRC.' },
+  { name: 'Swayam Kaushik', image: '/images/Swayam.jpg', description: 'Swayam Kaushik, a seasoned debater and legal enthusiast, brings his expertise in law, diplomacy, and international affairs to UNHRC at YCCE X MUN. With extensive experience in moot courts and MUNs, he ensures rigorous, solution-driven debates and impactful resolutions.' },
+  { name: 'Sarthak Pandit', image: '/images/Sarthak.jpg', description: 'Sarthak Pandit, Chair of the UNGC Committee at YCCE X MUN, is a seasoned diplomat with 120+ MUNs and experience at Harvard Kennedy and Stanford. As Founder of the Nagpur Diplomatic Summit, he ensures engaging, solution-driven debates fostering global cooperation.' },
+  { name: 'Garv Chawla', image: '/images/Garv.jpg', description: 'Garv Chawla, Chair of the UNGC Committee at YCCE X MUN, is an experienced leader with 60+ conferences and multiple Best Delegate awards. Known for his strategic thinking and diplomatic expertise, he ensures an enriching MUN experience focused on diplomacy and global issues.' },
+];
+
+export const subheadings = ['AIPPM', 'UNHRC', 'UNGA'];
+export const full = [
+  'All India Political Parties Meet',
+  'United Nations Human Rights Council',
+  'United Nations General Assembly'
+];
+
+export const paragraphs = [
+  "AIPPM is a dynamic MUN committee that simulates high-level political discussions among India’s leading politicians. Delegates engage in heated debates, policy-making, and strategic negotiations on key national issues like governance, security, and economic reforms. This committee challenges participants to think critically, form alliances, and influence decisions, offering a thrilling experience of real-world Indian politics.",
+  "AIPPM is a dynamic MUN committee that simulates high-level political discussions among India’s leading politicians. Delegates engage in heated debates, policy-making, and strategic negotiations on key national issues like governance, security, and economic reforms. This committee challenges participants to think critically, form alliances, and influence decisions, offering a thrilling experience of real-world Indian politics.",
+  "AIPPM is a dynamic MUN committee that simulates high-level political discussions among India’s leading politicians. Delegates engage in heated debates, policy-making, and strategic negotiations on key national issues like governance, security, and economic reforms. This committee challenges participants to think critically, form alliances, and influence decisions, offering a thrilling experience of real-world Indian politics."
+];
+
+export const agendas = [
+  "Debate on Efficacy of Anti-Conversion Laws: Protecting Freedom of Religion vs Majoritarianism.",
+  "Reassessing the Rights of Refugees in the Context of Global Refugee Crisis.",
+  "United Nations Security Council Reforms: A Step Towards Democratizing Global Governance?"
 ];
