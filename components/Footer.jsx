@@ -115,7 +115,7 @@ export default Footer;
 // Not Neccessary Part
 export const TechnicalTeamModalComponent = () => {
   return (
-    <dialog id="my_modal" className="modal">
+    <dialog id="my_modal" className="modal" data-theme="light">
       <div className="modal-box bg-white">
         <form method="dialog">
           <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
