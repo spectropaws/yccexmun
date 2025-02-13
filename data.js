@@ -185,6 +185,7 @@ export const advisoryBoard = [
   {
     imgSrc: "/demo-mun.png",
     name: "MAANUKHRAJ SINGH ALAG",
+    name: "MAANUKHRAJ SINGH ALAG",
     position: "Position",
     description:
       "Maanukhraj Singh Alag, a seasoned Model United Nations (MUN) expert, brings a wealth of experience to the Advisory Committee of YCCE X MUN. Having served as the Secretary General at Cosmopolitan Revolutionary Model United Nations, he has demonstrated exceptional leadership in organizing large-scale conferences. As a Best Delegate at Apex MUN and with participation in renowned international debate competitions, Maanukhraj's expertise in diplomacy, critical thinking, and negotiation will guide delegates in navigating complex global issues and crafting impactful resolutions. His strategic insights and experience will ensure a dynamic and engaging MUN experience.",
