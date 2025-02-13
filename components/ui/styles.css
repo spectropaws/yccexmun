@@ -3,6 +3,8 @@
 @import "@radix-ui/colors/mauve.css";
 @import "@radix-ui/colors/purple.css";
 @import "@radix-ui/colors/violet.css";
+@tailwind utilities;
+@tailwind components;
 
 .hover\:underline-gradient:hover {
 	position: relative;
@@ -111,6 +113,74 @@ p {
 		width: auto;
 	}
 }
+
+@layer utilities {
+
+	.lg\\:gap-40pc{
+		gap: 100%;
+	}
+	.gap-20pc {
+	  gap: 25%;
+	}
+	.sm\\:gap-8pc {
+	  gap: 10%;
+	  
+	}
+	.md\\:gap-40pc {
+	  gap: 40%;
+	}
+  }
+@layer components {
+	.gradient-underline {
+	  position: relative;
+	  display: inline-block;
+	  font-size: 1.5rem;
+	}
+  
+	.gradient-underline::after {
+	  content: "";
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 3px;
+	  background: linear-gradient(to right, #ff7e5f, #feb47b);
+	  transform: scaleX(0);
+	  transform-origin: bottom right;
+	  transition: transform 0.7s ease-out;
+	}
+  
+	.gradient-underline.active::after {
+	  transform: scaleX(1);
+	  transform-origin: bottom left;
+	}
+	.custom-underline-gradient {
+		position: relative;
+		display: inline-block;
+		font-size: 1.5rem; /* Adjust font size */
+	}
+
+	.custom-underline-gradient::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 3px; /* Thickness of the underline */
+		background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient */
+		transform: scaleX(0);
+		transform-origin: bottom right;
+		transition: transform 0.7s ease-out;
+	}
+
+	.custom-underline-gradient.active::after {
+		transform: scaleX(1);
+		transform-origin: bottom left;
+	}
+}
+
+
+  
 
 .NavigationMenuIndicator {
 	display: flex;
@@ -355,4 +425,45 @@ p {
 	}
 }
 
+.gen-sec-letter-container {
+ background-color: #EFE7E4;
   
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+
+.gen-sec-letter {
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 10;
+}
+
+.gen-sec-letter h2 {
+  font-family: 'Great Vibes', cursive;
+  font-weight: normal;
+  color: #54250B;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 500px) {
+  .gen-sec-letter h2 {
+    font-size: 200%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gen-sec-letter h2 {
+    font-size: 200%;
+  }
+}
+
+}
+
