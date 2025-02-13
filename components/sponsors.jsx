@@ -5,7 +5,7 @@ const Sponsors = () => {
     <div className="px-3 md:px-0">
       <div className="grid-background rounded-2xl border mt-10 shadow-lg overflow-hidden">
         <div className="pt-5 lg:pt-10">
-          <h4 className="text-5xl md:text-7xl font-bold text-center bg-gradient-to-t from-[#C2A597] to-[#54250B] bg-clip-text text-transparent">
+          <h4 className="text-5xl md:text-7xl font-bold text-center bg-gradient">
             Sponsors
           </h4>
         </div>

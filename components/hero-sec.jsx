@@ -4,10 +4,11 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ArrowRight, ArrowUpRight, Dot } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
+import { carouselImages } from "../data";
 
 const HeroSec = () => {
   const [navHeight, setNavHeight] = useState(0);
@@ -60,6 +61,11 @@ const HeroSec = () => {
     };
   }, []);
 
+  function getSlideActive() {
+    const swiperSlide = useSwiperSlide();
+    return swiperSlide.isActive;
+  }
+
   return (
     <div className="bg-[#EFE7E4] w-full rounded-2xl relative">
       <div className="">
@@ -79,46 +85,40 @@ const HeroSec = () => {
           modules={[EffectFade, Autoplay]}
           className="w-full h-[550px] md:h-auto"
         >
-          <SwiperSlide
-            className={`!w-full !overflow-hidden relative`}
-            style={{ height: `calc(100vh - ${navHeight}px)` }}
-          >
-            <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full scale-105 h-full"></div>
-            <img
-              src="https://swiperjs.com/demos/images/nature-1.jpg"
-              className="w-full h-full object-cover object-center"
-            />
-          </SwiperSlide>
-          <SwiperSlide
-            className={`!w-full !overflow-hidden relative`}
-            style={{ height: `calc(100vh - ${navHeight}px)` }}
-          >
-            <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full h-full scale-105"></div>
-            <img
-              src="https://swiperjs.com/demos/images/nature-2.jpg"
-              className="w-full h-full object-cover object-center"
-            />
-          </SwiperSlide>
-          <SwiperSlide
-            className={`!w-full !overflow-hidden relative`}
-            style={{ height: `calc(100vh - ${navHeight}px)` }}
-          >
-            <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full h-full scale-105"></div>
-            <img
-              src="https://swiperjs.com/demos/images/nature-3.jpg"
-              className="w-full h-full object-cover object-center"
-            />
-          </SwiperSlide>
-          <SwiperSlide
-            className={`!w-full !overflow-hidden relative`}
-            style={{ height: `calc(100vh - ${navHeight}px)` }}
-          >
-            <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full h-full scale-105"></div>
-            <img
-              src="https://swiperjs.com/demos/images/nature-4.jpg"
-              className="w-full h-full object-cover object-center"
-            />
-          </SwiperSlide>
+          {carouselImages.map((src, index) => {
+            if (src.startsWith("/carousel/img")) {
+              return (
+                <SwiperSlide
+                  className={`!w-full !overflow-hidden relative`}
+                  style={{ height: `calc(100vh - ${navHeight}px)` }}
+                  key={index}
+                >
+                  <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full scale-105 h-full"></div>
+                  <img
+                    src={src}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </SwiperSlide>
+              );
+            } else {
+              return (
+                <SwiperSlide
+                  className={`!w-full !overflow-hidden relative`}
+                  style={{ height: `calc(100vh - ${navHeight}px)` }}
+                  key={index}
+                >
+                  <div className="absolute top-0 left-0 bg-[#EFE7E4]/70 blur-lg w-full scale-105 h-full"></div>
+                  <video
+                    src={src}
+                    className="w-full h-full object-cover object-center"
+                    autoPlay
+                    loop
+                    muted
+                  ></video>
+                </SwiperSlide>
+              );
+            }
+          })}
         </Swiper>
       </div>
 
@@ -149,7 +149,7 @@ const HeroSec = () => {
           className="flex flex-col justify-center items-center border-b border-t px-6 py-3 mt-5"
         >
           <div className="flex items-center gap-4">
-            <span className="p-2 border border-[#54250B] rounded-sm text-l sm:text-xl md:text-2xl font-bold text-[#54250B]">
+            <span className="p-2 border border-[#54250B] rounded-sm text-lg sm:text-xl md:text-2xl font-bold text-[#54250B]">
               22
             </span>
             <span className="text-2xl sm:text-3xl md:text-4xl">-</span>
@@ -165,7 +165,12 @@ const HeroSec = () => {
           <div className="py-6 px-10 border mx-1 border-[#54250B] bg-[#EFE7E4]/30 backdrop-blur-sm rounded-md relative">
             <div className="z-20 relative">
               <h5 className="md:text-2xl  text-nowrap">Book You seat Now</h5>
-              <button className="text-nowrap mx-auto group hover:-translate-y-2 hover:scale-110 hover:shadow-lg px-3 py-1 border rounded-[0.5rem] bg-[#C2A597] hover:bg-transparent duration-200 border-[#54250B] mt-5 flex items-center gap-3">
+              <button
+                className="text-nowrap mx-auto group hover:-translate-y-2 hover:scale-110 hover:shadow-lg px-3 py-1 border rounded-[0.5rem] bg-[#C2A597] hover:bg-transparent duration-200 border-[#54250B] mt-5 flex items-center gap-3"
+                onClick={() =>
+                  document.getElementById("hero_modal").showModal()
+                }
+              >
                 Book seat
                 <span className="w-8 overflow-hidden">
                   <div className="flex gap-4 -translate-x-[100%] group-hover:translate-x-[30%] duration-500">
@@ -184,6 +189,28 @@ const HeroSec = () => {
                   </div>
                 </span>
               </button>
+              {/* ---------------------------Dialog Box--------------------- */}
+              <dialog id="hero_modal" className="modal">
+                <div className="modal-box h-[700px] bg-white">
+                  <form method="dialog">
+                    <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                      ✕
+                    </button>
+                  </form>
+                  <h3 className="font-bold text-lg text-start">
+                    Register Here
+                  </h3>
+                  <div>
+                    <iframe
+                      src="https://konfhub.com/widget/ycce-x-mun?desc=false&secondaryBg=F7F7F7&ticketBg=F7F7F7&borderCl=F7F7F7&bg=FFFFFF&fontColor=572148&ticketCl=572148&btnColor=fb5850&fontFamily=Prompt&borderRadius=10"
+                      id="konfhub-widget"
+                      title="Register for YCCE X MUN"
+                      width="100%"
+                      height="570"
+                    ></iframe>
+                  </div>
+                </div>
+              </dialog>
             </div>
             <div ref={earth} className="absolute left-20 top-0 z-0">
               <img src="/earth.png" alt="earth" className="w-32" />
