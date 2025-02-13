@@ -1,6 +1,6 @@
 // Important date Timeline
 export const EventDates = [
-  { event: "Registration Starts", date: "06 Feb 2025" },
+  { event: "Registration Starts", date: "12 Feb 2025" },
   { event: "Registration Deadline", date: "28 Feb 2025" },
   { event: "Teams Announcement", date: "07 Mar 2025" },
   { event: "Orientation Session", date: "18 Mar 2025" },
@@ -44,8 +44,8 @@ export const FooterLinkData = [
 export const NavbarLinksData = [
   { url: "/about", title: "About Us" },
   { url: "/#schedule", title: "Event Schedule" },
-  { url: "/", title: "Commitee" },
-  // { url: "/register", title: "Register" },
+  { url: "/advisory-board", title: "Advisory Board" },
+  // { url: "/chairs", title: "Chairs" },
 ];
 
 //  Content Section
