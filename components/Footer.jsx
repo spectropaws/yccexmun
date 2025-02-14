@@ -7,7 +7,7 @@ import GithubIcon from "../public/svg/GithubIcon";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#EFE7E4] text-[#54250B] py-12 shadow-lg">
+    <footer id="footer" className="bg-[#EFE7E4] text-[#54250B] py-12 shadow-lg">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 gap-x-8 text-center md:text-left">
           <div className="flex flex-col items-center md:items-start">
@@ -111,7 +111,6 @@ const Footer = () => {
 
 export default Footer;
 
-
 // Not Neccessary Part
 export const TechnicalTeamModalComponent = () => {
   return (
@@ -133,13 +132,13 @@ export const TechnicalTeamModalComponent = () => {
                 {team.members.map((member, memberIndex) => (
                   <div
                     key={memberIndex}
-                    className="flex justify-between items-center border-b pb-4"
+                    className="flex justify-between items-center border-b border-gray-300 pb-4"
                   >
                     <div>
-                      <h4 className="text-lg font-semibold text-[#54250B]">
+                      {/* Animated Name */}
+                      <h4 className="text-lg font-semibold animate-gradient-text bg-gradient-to-r from-red-500 via-orange-500 via-yellow-500 via-green-500 via-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent">
                         {member.name}
                       </h4>
-                      <p className="text-sm text-gray-600">{member.role}</p>
                     </div>
                     <div className="flex space-x-4">
                       <a
