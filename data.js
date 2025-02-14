@@ -42,10 +42,13 @@ export const FooterLinkData = [
 
 // Navbar Links Data
 export const NavbarLinksData = [
+  { url: "/", title: "Home" },
   { url: "/about", title: "About Us" },
-  { url: "/#schedule", title: "Event Schedule" },
-  { url: "/advisory-board", title: "Advisory Board" },
   { url: "/chairs", title: "Commitee" },
+  { url: "/teams", title: "Teams" },
+  { url: "/advisory-board", title: "Advisory Board" },
+  { url: "/#schedule", title: "Event Schedule" },
+  { url: "/#footer", title: "Contact Us" },
 ];
 
 //  Content Section
@@ -73,21 +76,21 @@ export const teamsData = [
     name: "Technical Team",
     members: [
       {
-        name: "Rishabh Gokhe",
-        role: "Backend Developer",
-        image:
-          "https://media.licdn.com/dms/image/v2/D5603AQENv39NDiibWw/profile-displayphoto-shrink_400_400/B56ZTVi_EjGsAg-/0/1738749509576?e=1744243200&v=beta&t=WVCpt81Hfga7eOp3bZiD7p4Rra8UtOpJlGK5z_caHC4",
-        linkedinURL: "https://www.linkedin.com/in/rishabh-gokhe",
-        githubURL: "https://www.github.com/rishabhgokhe",
-      },
-      {
         name: "Om Mane",
-        role: "Graphic Designer",
+        role: "Team Coordinator",
         image:
           "https://media.istockphoto.com/id/1344688156/photo/portrait-of-a-man-using-a-computer-in-a-modern-office.jpg?s=612x612&w=0&k=20&c=xQsoWWZXJ1ydmmCGgnHyuVYUc7BILG1FauoHcloDnG4=",
         linkedinURL:
           "https://www.linkedin.com/in/om-mane-20479a25b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         githubURL: "https://www.github.com/spectropaws",
+      },
+      {
+        name: "Rishabh Gokhe",
+        role: "Frontend Developer",
+        image:
+          "https://media.licdn.com/dms/image/v2/D5603AQENv39NDiibWw/profile-displayphoto-shrink_400_400/B56ZTVi_EjGsAg-/0/1738749509576?e=1744243200&v=beta&t=WVCpt81Hfga7eOp3bZiD7p4Rra8UtOpJlGK5z_caHC4",
+        linkedinURL: "https://www.linkedin.com/in/rishabh-gokhe",
+        githubURL: "https://www.github.com/rishabhgokhe",
       },
       {
         name: "Atul Thakre",
@@ -100,7 +103,7 @@ export const teamsData = [
       },
       {
         name: "Akansha Sawant",
-        role: "Animator",
+        role: "Frontend Developer",
         image:
           "https://media.istockphoto.com/id/960937636/photo/woman-hands-coding-html-and-programming-on-screen-laptop-web-developer.jpg?s=612x612&w=0&k=20&c=MSLlYt0QRwyRenwhZAhSerwvs-3qt9QjieJ0ta2MAuc=",
         linkedinURL:
@@ -113,21 +116,21 @@ export const teamsData = [
     name: "Design Team",
     members: [
       {
-        name: "Rishabh Gokhe",
-        role: "Backend Developer",
-        image:
-          "https://media.licdn.com/dms/image/v2/D5603AQENv39NDiibWw/profile-displayphoto-shrink_400_400/B56ZTVi_EjGsAg-/0/1738749509576?e=1744243200&v=beta&t=WVCpt81Hfga7eOp3bZiD7p4Rra8UtOpJlGK5z_caHC4",
-        linkedinURL: "https://www.linkedin.com/in/rishabh-gokhe",
-        githubURL: "https://www.github.com/rishabhgokhe",
-      },
-      {
         name: "Om Mane",
-        role: "Graphic Designer",
+        role: "Team Coordinator",
         image:
           "https://media.istockphoto.com/id/1344688156/photo/portrait-of-a-man-using-a-computer-in-a-modern-office.jpg?s=612x612&w=0&k=20&c=xQsoWWZXJ1ydmmCGgnHyuVYUc7BILG1FauoHcloDnG4=",
         linkedinURL:
           "https://www.linkedin.com/in/om-mane-20479a25b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         githubURL: "https://www.github.com/spectropaws",
+      },
+      {
+        name: "Rishabh Gokhe",
+        role: "Frontend Developer",
+        image:
+          "https://media.licdn.com/dms/image/v2/D5603AQENv39NDiibWw/profile-displayphoto-shrink_400_400/B56ZTVi_EjGsAg-/0/1738749509576?e=1744243200&v=beta&t=WVCpt81Hfga7eOp3bZiD7p4Rra8UtOpJlGK5z_caHC4",
+        linkedinURL: "https://www.linkedin.com/in/rishabh-gokhe",
+        githubURL: "https://www.github.com/rishabhgokhe",
       },
       {
         name: "Atul Thakre",
@@ -140,7 +143,7 @@ export const teamsData = [
       },
       {
         name: "Akansha Sawant",
-        role: "Animator",
+        role: "Frontend Developer",
         image:
           "https://media.istockphoto.com/id/960937636/photo/woman-hands-coding-html-and-programming-on-screen-laptop-web-developer.jpg?s=612x612&w=0&k=20&c=MSLlYt0QRwyRenwhZAhSerwvs-3qt9QjieJ0ta2MAuc=",
         linkedinURL:
@@ -209,29 +212,59 @@ export const carouselImages = [
 
 //Chairs Data
 export const slides = [
-  { name: 'Piyush Pariwakam', image: '/images/Piyush.jpg', description: 'Piyush Pariwakam, a seasoned debater with over five years of MUN experience, excels in all roles. He serves as Ambassador of the University Grants Commission, India, advocating Equality, Equity, and Democratic Principles. Get ready for an engaging and insightful AIPPM at YCCE X MUN!' },
-  { name: 'Varad Dorlikar', image: '/images/Varad.jpg', description: 'Varad Dorlikar, a seasoned MUN veteran with 60+ conferences, excels in Indian committees, legal discourse, and parliamentary debates. With experience as Secretary General, President, and Chairperson, he ensures impactful debates and resolutions at YCCE X MUN.' },
-  { name: 'Swara Dalvi', image: '/images/Swara.jpg', description: 'Swara Dalvi, with exceptional skills in diplomacy, legal reasoning, and international affairs, is a powerhouse in the MUN circuit. A distinguished orator and accomplished MUNer, she ensures balanced, thought-provoking debates and an intellectually charged experience at UNHRC.' },
-  { name: 'Swayam Kaushik', image: '/images/Swayam.jpg', description: 'Swayam Kaushik, a seasoned debater and legal enthusiast, brings his expertise in law, diplomacy, and international affairs to UNHRC at YCCE X MUN. With extensive experience in moot courts and MUNs, he ensures rigorous, solution-driven debates and impactful resolutions.' },
-  { name: 'Sarthak Pandit', image: '/images/Sarthak.jpg', description: 'Sarthak Pandit, Chair of the UNGC Committee at YCCE X MUN, is a seasoned diplomat with 120+ MUNs and experience at Harvard Kennedy and Stanford. As Founder of the Nagpur Diplomatic Summit, he ensures engaging, solution-driven debates fostering global cooperation.' },
-  { name: 'Garv Chawla', image: '/images/Garv.jpg', description: 'Garv Chawla, Chair of the UNGC Committee at YCCE X MUN, is an experienced leader with 60+ conferences and multiple Best Delegate awards. Known for his strategic thinking and diplomatic expertise, he ensures an enriching MUN experience focused on diplomacy and global issues.' },
+  {
+    name: "Piyush Pariwakam",
+    image: "/images/Piyush.jpg",
+    description:
+      "Piyush Pariwakam, a seasoned debater with over five years of MUN experience, excels in all roles. He serves as Ambassador of the University Grants Commission, India, advocating Equality, Equity, and Democratic Principles. Get ready for an engaging and insightful AIPPM at YCCE X MUN!",
+  },
+  {
+    name: "Varad Dorlikar",
+    image: "/images/Varad.jpg",
+    description:
+      "Varad Dorlikar, a seasoned MUN veteran with 60+ conferences, excels in Indian committees, legal discourse, and parliamentary debates. With experience as Secretary General, President, and Chairperson, he ensures impactful debates and resolutions at YCCE X MUN.",
+  },
+  {
+    name: "Swara Dalvi",
+    image: "/images/Swara.jpg",
+    description:
+      "Swara Dalvi, with exceptional skills in diplomacy, legal reasoning, and international affairs, is a powerhouse in the MUN circuit. A distinguished orator and accomplished MUNer, she ensures balanced, thought-provoking debates and an intellectually charged experience at UNHRC.",
+  },
+  {
+    name: "Swayam Kaushik",
+    image: "/images/Swayam.jpg",
+    description:
+      "Swayam Kaushik, a seasoned debater and legal enthusiast, brings his expertise in law, diplomacy, and international affairs to UNHRC at YCCE X MUN. With extensive experience in moot courts and MUNs, he ensures rigorous, solution-driven debates and impactful resolutions.",
+  },
+  {
+    name: "Sarthak Pandit",
+    image: "/images/Sarthak.jpg",
+    description:
+      "Sarthak Pandit, Chair of the UNGC Committee at YCCE X MUN, is a seasoned diplomat with 120+ MUNs and experience at Harvard Kennedy and Stanford. As Founder of the Nagpur Diplomatic Summit, he ensures engaging, solution-driven debates fostering global cooperation.",
+  },
+  {
+    name: "Garv Chawla",
+    image: "/images/Garv.jpg",
+    description:
+      "Garv Chawla, Chair of the UNGC Committee at YCCE X MUN, is an experienced leader with 60+ conferences and multiple Best Delegate awards. Known for his strategic thinking and diplomatic expertise, he ensures an enriching MUN experience focused on diplomacy and global issues.",
+  },
 ];
 
-export const subheadings = ['AIPPM', 'UNHRC', 'UNGA'];
+export const subheadings = ["AIPPM", "UNHRC", "UNGA"];
 export const full = [
-  'All India Political Parties Meet',
-  'United Nations Human Rights Council',
-  'United Nations General Assembly'
+  "All India Political Parties Meet",
+  "United Nations Human Rights Council",
+  "United Nations General Assembly",
 ];
 
 export const paragraphs = [
   "AIPPM is a dynamic MUN committee that simulates high-level political discussions among India’s leading politicians. Delegates engage in heated debates, policy-making, and strategic negotiations on key national issues like governance, security, and economic reforms. This committee challenges participants to think critically, form alliances, and influence decisions, offering a thrilling experience of real-world Indian politics.",
   "AIPPM is a dynamic MUN committee that simulates high-level political discussions among India’s leading politicians. Delegates engage in heated debates, policy-making, and strategic negotiations on key national issues like governance, security, and economic reforms. This committee challenges participants to think critically, form alliances, and influence decisions, offering a thrilling experience of real-world Indian politics.",
-  "AIPPM is a dynamic MUN committee that simulates high-level political discussions among India’s leading politicians. Delegates engage in heated debates, policy-making, and strategic negotiations on key national issues like governance, security, and economic reforms. This committee challenges participants to think critically, form alliances, and influence decisions, offering a thrilling experience of real-world Indian politics."
+  "AIPPM is a dynamic MUN committee that simulates high-level political discussions among India’s leading politicians. Delegates engage in heated debates, policy-making, and strategic negotiations on key national issues like governance, security, and economic reforms. This committee challenges participants to think critically, form alliances, and influence decisions, offering a thrilling experience of real-world Indian politics.",
 ];
 
 export const agendas = [
   "Debate on Efficacy of Anti-Conversion Laws: Protecting Freedom of Religion vs Majoritarianism.",
   "Reassessing the Rights of Refugees in the Context of Global Refugee Crisis.",
-  "United Nations Security Council Reforms: A Step Towards Democratizing Global Governance?"
+  "United Nations Security Council Reforms: A Step Towards Democratizing Global Governance?",
 ];

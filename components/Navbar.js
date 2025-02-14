@@ -125,7 +125,7 @@ const Navbar = () => {
           </button>
 
           {/* ---------------------------Dialog */}
-          <dialog id="nav_mobile_modal" className="modal">
+          <dialog id="nav_mobile_modal" className="modal" data-theme={"light"}>
             <div className="modal-box h-[700px] bg-white">
               <form method="dialog">
                 <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
