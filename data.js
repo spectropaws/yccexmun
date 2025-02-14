@@ -73,120 +73,215 @@ export const ContentSectionCardData = [
 // Teams Data
 export const teamsData = [
   {
-    name: "Technical Team",
+    name: "USG'S",
     members: [
       {
-        name: "Om Mane",
-        role: "Team Coordinator",
+        name: "Kushal Javkhedkar",
+        role: "General Secretariat",
         image:
-          "https://media.istockphoto.com/id/1344688156/photo/portrait-of-a-man-using-a-computer-in-a-modern-office.jpg?s=612x612&w=0&k=20&c=xQsoWWZXJ1ydmmCGgnHyuVYUc7BILG1FauoHcloDnG4=",
-        linkedinURL:
-          "https://www.linkedin.com/in/om-mane-20479a25b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        githubURL: "https://www.github.com/spectropaws",
+          "/USG/Kushal1.jpg",
       },
       {
-        name: "Rishabh Gokhe",
-        role: "Frontend Developer",
+        name: "Yugandhara Jagtap",
+        role: "Director General",
         image:
-          "https://media.licdn.com/dms/image/v2/D5603AQENv39NDiibWw/profile-displayphoto-shrink_400_400/B56ZTVi_EjGsAg-/0/1738749509576?e=1744243200&v=beta&t=WVCpt81Hfga7eOp3bZiD7p4Rra8UtOpJlGK5z_caHC4",
-        linkedinURL: "https://www.linkedin.com/in/rishabh-gokhe",
-        githubURL: "https://www.github.com/rishabhgokhe",
+          "/USG/Yugandhara.jpg",
       },
       {
-        name: "Atul Thakre",
-        role: "Frontend Developer",
-        image:
-          "https://media.licdn.com/dms/image/v2/D5603AQFZ3aSXzI4F7A/profile-displayphoto-shrink_400_400/B56ZQ8K9lKHoAk-/0/1736176296675?e=1744243200&v=beta&t=SIJMVx2EhlC4sEUQOIpg39tlWzeEMxPDLfPKmuj6A00",
-        linkedinURL:
-          "https://www.linkedin.com/in/atul-thakre-logers?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        githubURL: "https://www.github.com/Atul-ThakreLO",
-      },
-      {
-        name: "Akansha Sawant",
-        role: "Frontend Developer",
+        name: "Paras Kalbande",
+        role: "Deputy General Secretariat",
         image:
           "https://media.istockphoto.com/id/960937636/photo/woman-hands-coding-html-and-programming-on-screen-laptop-web-developer.jpg?s=612x612&w=0&k=20&c=MSLlYt0QRwyRenwhZAhSerwvs-3qt9QjieJ0ta2MAuc=",
-        linkedinURL:
-          "https://www.linkedin.com/in/akanksha-sawant-2598a1305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        githubURL: "https://www.github.com/nastyax0",
+      },
+      {
+        name: "Avanti Raut",
+        role: "Deputy General Secretariat",
+        image:
+          "/USG/AvantiRaut_DeputyGenSec.jpg",
+      },
+      {
+        name: "Karan Kangali",
+        role: "USG Logistics, EM, Finance",
+        image:
+          "https://media.istockphoto.com/id/960937636/photo/woman-hands-coding-html-and-programming-on-screen-laptop-web-developer.jpg?s=612x612&w=0&k=20&c=MSLlYt0QRwyRenwhZAhSerwvs-3qt9QjieJ0ta2MAuc=",
+      },
+      {
+        name: "Dhruv Munghate",
+        role: "USG Hospitality & Volunteer In-Charge",
+        image: "/USG/DhruvMunghate_Hospitality& VolenteersIncharge.jpg",
+      },
+      {
+        name: "Ridhi Nahate",
+        role: "USG Hospitality & Volunteer In-Charge",
+        image: "/USG/RiddhiNahate_Hospitality& VolenteersIncharge.jpg",
+      },
+      {
+        name: "Om Mane",
+        role: "USG Technical",
+        image:
+          "/USG/Om_Mane_USG-Technical.jpg",
+      },
+      {
+        name: "Vinay Muraskar",
+        role: "USG Design",
+        image:
+          "/USG/Vinay Muraskar_Design Head.jpg",
+      },
+      {
+        name: "Chitraksh Chavan",
+        role: "USG Design",
+        image: "/USG/Chitraksh Chavan _ Design Head.jpg",
+      },
+      {
+        name: "Bhuvanesh Chavan",
+        role: "USG Database",
+        image:
+          "https://media.istockphoto.com/id/960937636/photo/woman-hands-coding-html-and-programming-on-screen-laptop-web-developer.jpg?s=612x612&w=0&k=20&c=MSLlYt0QRwyRenwhZAhSerwvs-3qt9QjieJ0ta2MAuc=",
+
+      },
+      {
+        name: "Aditya Rajankar",
+        role: "USG Publicity",
+        image: "/USG/Aditya R_PR.jpg",
+      },
+      {
+        name: "Devki Parajiya",
+        role: "USG Literature",
+        image:
+          "/USG/DevkiParajiya_Literature.jpg",
+      },
+      {
+        name: "Sohum Weginwar",
+        role: "USG Hall Management",
+        image: "/USG/sohum Weginwar _HM.jpg",
+      },
+      {
+        name: "Diya Choudhari",
+        role: "USG Hall Management",
+        image: "/USG/Diya Choudhari_HM.jpg",
+      },
+      {
+        name: "Ayush Sontakke",
+        role: "USG Social Media",
+        image: "/USG/AYUSH_SOCIAL_MEDIA.jpg",
       },
     ],
   },
-  {
-    name: "Design Team",
-    members: [
-      {
-        name: "Om Mane",
-        role: "Team Coordinator",
-        image:
-          "https://media.istockphoto.com/id/1344688156/photo/portrait-of-a-man-using-a-computer-in-a-modern-office.jpg?s=612x612&w=0&k=20&c=xQsoWWZXJ1ydmmCGgnHyuVYUc7BILG1FauoHcloDnG4=",
-        linkedinURL:
-          "https://www.linkedin.com/in/om-mane-20479a25b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        githubURL: "https://www.github.com/spectropaws",
-      },
-      {
-        name: "Rishabh Gokhe",
-        role: "Frontend Developer",
-        image:
-          "https://media.licdn.com/dms/image/v2/D5603AQENv39NDiibWw/profile-displayphoto-shrink_400_400/B56ZTVi_EjGsAg-/0/1738749509576?e=1744243200&v=beta&t=WVCpt81Hfga7eOp3bZiD7p4Rra8UtOpJlGK5z_caHC4",
-        linkedinURL: "https://www.linkedin.com/in/rishabh-gokhe",
-        githubURL: "https://www.github.com/rishabhgokhe",
-      },
-      {
-        name: "Atul Thakre",
-        role: "Frontend Developer",
-        image:
-          "https://media.licdn.com/dms/image/v2/D5603AQFZ3aSXzI4F7A/profile-displayphoto-shrink_400_400/B56ZQ8K9lKHoAk-/0/1736176296675?e=1744243200&v=beta&t=SIJMVx2EhlC4sEUQOIpg39tlWzeEMxPDLfPKmuj6A00",
-        linkedinURL:
-          "https://www.linkedin.com/in/atul-thakre-logers?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        githubURL: "https://www.github.com/Atul-ThakreLO",
-      },
-      {
-        name: "Akansha Sawant",
-        role: "Frontend Developer",
-        image:
-          "https://media.istockphoto.com/id/960937636/photo/woman-hands-coding-html-and-programming-on-screen-laptop-web-developer.jpg?s=612x612&w=0&k=20&c=MSLlYt0QRwyRenwhZAhSerwvs-3qt9QjieJ0ta2MAuc=",
-        linkedinURL:
-          "https://www.linkedin.com/in/akanksha-sawant-2598a1305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        githubURL: "https://www.github.com/nastyax0",
-      },
-    ],
-  },
+  // {
+  //   name: "Technical Team",
+  //   members: [
+  //     {
+  //       name: "Rishabh Gokhe",
+  //       role: "Backend Developer",
+  //       image:
+  //         "https://media.licdn.com/dms/image/v2/D5603AQENv39NDiibWw/profile-displayphoto-shrink_400_400/B56ZTVi_EjGsAg-/0/1738749509576?e=1744243200&v=beta&t=WVCpt81Hfga7eOp3bZiD7p4Rra8UtOpJlGK5z_caHC4",
+  //       linkedinURL: "https://www.linkedin.com/in/rishabh-gokhe",
+  //       githubURL: "https://www.github.com/rishabhgokhe",
+  //     },
+  //     {
+  //       name: "Om Mane",
+  //       role: "Graphic Designer",
+  //       image:
+  //         "https://media.istockphoto.com/id/1344688156/photo/portrait-of-a-man-using-a-computer-in-a-modern-office.jpg?s=612x612&w=0&k=20&c=xQsoWWZXJ1ydmmCGgnHyuVYUc7BILG1FauoHcloDnG4=",
+  //       linkedinURL:
+  //         "https://www.linkedin.com/in/om-mane-20479a25b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+  //       githubURL: "https://www.github.com/spectropaws",
+  //     },
+  //     {
+  //       name: "Atul Thakre",
+  //       role: "Frontend Developer",
+  //       image:
+  //         "https://media.licdn.com/dms/image/v2/D5603AQFZ3aSXzI4F7A/profile-displayphoto-shrink_400_400/B56ZQ8K9lKHoAk-/0/1736176296675?e=1744243200&v=beta&t=SIJMVx2EhlC4sEUQOIpg39tlWzeEMxPDLfPKmuj6A00",
+  //       linkedinURL:
+  //         "https://www.linkedin.com/in/atul-thakre-logers?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+  //       githubURL: "https://www.github.com/Atul-ThakreLO",
+  //     },
+  //     {
+  //       name: "Akansha Sawant",
+  //       role: "Animator",
+  //       image:
+  //         "https://media.istockphoto.com/id/960937636/photo/woman-hands-coding-html-and-programming-on-screen-laptop-web-developer.jpg?s=612x612&w=0&k=20&c=MSLlYt0QRwyRenwhZAhSerwvs-3qt9QjieJ0ta2MAuc=",
+  //       linkedinURL:
+  //         "https://www.linkedin.com/in/akanksha-sawant-2598a1305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+  //       githubURL: "https://www.github.com/nastyax0",
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: "Design Team",
+  //   members: [
+  //     {
+  //       name: "Rishabh Gokhe",
+  //       role: "Backend Developer",
+  //       image:
+  //         "https://media.licdn.com/dms/image/v2/D5603AQENv39NDiibWw/profile-displayphoto-shrink_400_400/B56ZTVi_EjGsAg-/0/1738749509576?e=1744243200&v=beta&t=WVCpt81Hfga7eOp3bZiD7p4Rra8UtOpJlGK5z_caHC4",
+  //       linkedinURL: "https://www.linkedin.com/in/rishabh-gokhe",
+  //       githubURL: "https://www.github.com/rishabhgokhe",
+  //     },
+  //     {
+  //       name: "Om Mane",
+  //       role: "Graphic Designer",
+  //       image:
+  //         "https://media.istockphoto.com/id/1344688156/photo/portrait-of-a-man-using-a-computer-in-a-modern-office.jpg?s=612x612&w=0&k=20&c=xQsoWWZXJ1ydmmCGgnHyuVYUc7BILG1FauoHcloDnG4=",
+  //       linkedinURL:
+  //         "https://www.linkedin.com/in/om-mane-20479a25b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+  //       githubURL: "https://www.github.com/spectropaws",
+  //     },
+  //     {
+  //       name: "Atul Thakre",
+  //       role: "Frontend Developer",
+  //       image:
+  //         "https://media.licdn.com/dms/image/v2/D5603AQFZ3aSXzI4F7A/profile-displayphoto-shrink_400_400/B56ZQ8K9lKHoAk-/0/1736176296675?e=1744243200&v=beta&t=SIJMVx2EhlC4sEUQOIpg39tlWzeEMxPDLfPKmuj6A00",
+  //       linkedinURL:
+  //         "https://www.linkedin.com/in/atul-thakre-logers?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+  //       githubURL: "https://www.github.com/Atul-ThakreLO",
+  //     },
+  //     {
+  //       name: "Akansha Sawant",
+  //       role: "Animator",
+  //       image:
+  //         "https://media.istockphoto.com/id/960937636/photo/woman-hands-coding-html-and-programming-on-screen-laptop-web-developer.jpg?s=612x612&w=0&k=20&c=MSLlYt0QRwyRenwhZAhSerwvs-3qt9QjieJ0ta2MAuc=",
+  //       linkedinURL:
+  //         "https://www.linkedin.com/in/akanksha-sawant-2598a1305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+  //       githubURL: "https://www.github.com/nastyax0",
+  //     },
+  //   ],
+  // },
 ];
 
 // Advisory Board
 
 export const advisoryBoard = [
   {
-    imgSrc: "/demo-mun.png",
+    imgSrc: "/Advisory/Piyush.jpg",
     name: "PIYUSH PARIWAKAM",
     position: "Position",
     description:
       "With years of experience in debate and diplomacy, Piyush Pariwakam joins the Advisory Board of YCCE X MUN, bringing invaluable expertise to the conference. His deep understanding of geopolitics, governance, and democratic values will provide crucial guidance to the organizing team, ensuring a high-caliber and impactful event. Piyush's strategic insights will shape an intellectually enriching MUN experience, elevating the discussions and fostering a meaningful debate for all participants.",
   },
   {
-    imgSrc: "/demo-mun.png",
+    imgSrc: "/Advisory/Sparshika_advisory.jpg",
     name: "SPARSHIKA HADKE",
     position: "Position",
     description:
       "Sparshika Hadke, a member of the Advisory Committee for YCCE X MUN, is an experienced leader with a strong background in community development and Model United Nations. Having served as the President and International Service Director of the Rotaract Club of Nagpur Downtown, she has spearheaded global service projects and youth empowerment initiatives. Her expertise in leadership, diplomacy, and organizing impactful events will offer valuable guidance to participants, ensuring a well-rounded and enriching MUN experience.",
   },
   {
-    imgSrc: "/demo-mun.png",
+    imgSrc: "/Advisory/DevanshGandhi_Advisory.JPG",
     name: "DEVANSH GANDHI",
     position: "Position",
     description:
       "Devansh Gandhi, a member of the Advisory Committee for YCCE X MUN, is a skilled leader with a passion for entrepreneurship and strategic decision-making. With a strong background in Model United Nations, having participated in over 20 conferences and won multiple awards, Devansh brings valuable experience in diplomacy, negotiation, and problem-solving. As a dynamic leader, he has excelled in managing teams and organizing events, showcasing his ability to foster collaboration and drive success. His expertise will inspire participants to develop critical thinking and leadership skills, ensuring a highly engaging and impactful MUN experience.",
   },
   {
-    imgSrc: "/demo-mun.png",
+    imgSrc: "/Advisory/Naincy Pande _advisory_1c.jpg",
     name: "NAINCY PANDE ",
     position: "Position",
     description:
       "Naincy Pande, an accomplished orator and public speaker, brings her expertise in parliamentary debates and declamation to the Advisory Board of YCCE X MUN. With accolades at state and district levels, along with a strong command of communication and leadership, she ensures a high-quality, intellectually stimulating conference. Her experience will guide participants in mastering diplomacy, structured argumentation, and impactful resolutions. Passionate about fostering meaningful discourse, she strives to create an environment where delegates can refine their perspectives and develop confidence in global affairs.",
   },
   {
-    imgSrc: "/demo-mun.png",
+    imgSrc: "/Advisory/Manuukraj.jpg",
     name: "MAANUKHRAJ SINGH ALAG",
     name: "MAANUKHRAJ SINGH ALAG",
     position: "Position",
@@ -199,10 +294,9 @@ export const carouselImages = [
   "/carousel/video1.mp4",
   "/carousel/img1.jpg",
   "/carousel/img2.jpg",
-  "/carousel/video2.mp4",
   "/carousel/img3.jpg",
-  "/carousel/img4.jpg",
   "/carousel/video3.mp4",
+  "/carousel/img4.jpg",
   "/carousel/img5.jpg",
   "/carousel/img6.jpg",
   "/carousel/video4.mp4",

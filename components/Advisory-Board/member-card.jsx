@@ -1,7 +1,15 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const MemberCard = ({ imgSrc, position, name, description, index }) => {
+  // const paraRef = useRef(null);
+  // const [height, setHeight] = useState()
+
+  // useEffect(() => {
+  //   setHeight(paraRef.current.offsetHeight)
+  // }, [])
+
   return (
     <div
       className={`flex gap-10 ${
@@ -14,10 +22,10 @@ const MemberCard = ({ imgSrc, position, name, description, index }) => {
         <img
           src={imgSrc}
           alt={name}
-          className=" h-full object-cover object-center"
+          className="w-full object-cover object-center h-96"
         />
       </div>
-      <div className="md:w-[60%] w-full group ">
+      <div className="md:w-[60%] w-full group">
         <h5 className="text-3xl font-semibold tracking-wide text-wrap sm:w-max hover-underline">
           {name}
         </h5>
