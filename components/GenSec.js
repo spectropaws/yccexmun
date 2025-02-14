@@ -12,7 +12,7 @@ export default function LetterPage() {
         <div className="gen-sec-letter-container shadow-md relative">
           <section className="gen-sec-letter flex flex-col md:flex-row items-start justify-between">
             <div className="text-left w-full md:w-1/2 pr-4 mb-4 md:mb-0">
-            <h2 className="text-2xl font-bold mt-8 mb-8"> <span className="text-6xl font-bold">“</span>Message  from the General Secretary</h2>
+            <h2 className="text-2xl font-bold mt-8 mb-8"> <span className="text-6xl font-bold">“</span>Message  from the Sectretariat General</h2>
             <p></p>
           
               <p className="mt-4 font-semibold">Dear Delegates and Honored Guests,</p>
