@@ -39,7 +39,8 @@ export default function LetterPage() {
               <br />
               <p>Wishing you all an inspiring and transformative experience.</p>
               <br />
-              <h3 className="text-right font-bold right-0 bottom-3 mb-4">Kushal Javkhedkar</h3>
+              <h3 className="text-left font-heading right-0 bottom-3 mb-1">Sectretariat General,</h3>
+              <h3 className="text-left font-bold right-0 bottom-3 mb-4">Kushal Javkhedkar</h3>
             </div>
             
             <div className="w-full md:w-1/2 relative flex rounded-lg justify-center md:justify-end mt-4 md:mt-0">
