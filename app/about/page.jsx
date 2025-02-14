@@ -1,5 +1,7 @@
 import Image from "next/image";
 import MUNImage from "../../public/demo-mun.png";
+import RubyJubileeImg from "../../public/images/ruby-jubliee.jpg";
+import CseDepImg from "../../public/images/cse-department.png"
 import YCCE from "../../public/images/ycce.png";
 
 export default function Page() {
@@ -34,7 +36,7 @@ export default function Page() {
         {/* ABOUT RUBY JUBILEE */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
-            <h2 className="text-3xl font-semibold text-[#54250B] mb-4">
+            <h2 className="text-3xl text-center md:text-left font-semibold text-[#54250B] mb-4">
               ABOUT RUBY JUBILEE
             </h2>
             <p className="text-gray-700">
@@ -53,7 +55,7 @@ export default function Page() {
             </p>
           </div>
           <Image
-            src={MUNImage}
+            src={RubyJubileeImg}
             alt="Ruby Jubilee"
             className="w-full max-h-80 object-cover rounded-lg shadow-lg"
           />
@@ -62,12 +64,12 @@ export default function Page() {
         {/* ABOUT DEPARTMENT */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <Image
-            src={MUNImage}
+            src={CseDepImg}
             alt="Department of CSE"
             className="w-full max-h-80 object-cover rounded-lg shadow-lg hidden md:block"
           />
           <div>
-            <h2 className="text-3xl font-semibold text-[#54250B] mb-4">
+            <h2 className="text-3xl text-center md:text-left font-semibold text-[#54250B] mb-4">
               ABOUT DEPARTMENT
             </h2>
             <p className="text-gray-700">

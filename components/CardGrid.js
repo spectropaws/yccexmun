@@ -7,28 +7,27 @@ import './ui/styles.css';
 const CardGrid = () => {
   const [activeSubheading, setActiveSubheading] = useState(null);
 
-  // Initialize the ref as an empty array to hold references to each subheading element
+  
   const subheadingRefs = useRef([]);
 
   useEffect(() => {
-    // Set up an intersection observer to detect when each subheading is in view
+   
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           const index = subheadingRefs.current.indexOf(entry.target);
           if (entry.isIntersecting) {
-            setActiveSubheading(index); // Activate underline when in view
+            setActiveSubheading(index); 
           }
         });
       },
-      { threshold: 0.5 } // Trigger when 50% of the element is visible
+      { threshold: 0.5 } 
     );
 
-    // Observe all subheadings
     subheadingRefs.current.forEach((ref) => observer.observe(ref));
 
     return () => {
-      observer.disconnect(); // Cleanup observer on component unmount
+      observer.disconnect();
     };
   }, []);
 
@@ -37,10 +36,10 @@ const CardGrid = () => {
       <div className="mb-14 text-center">
         <div className="flex flex-col md:flex-row justify-between items-center md:space-x-6 space-y-3 md:space-y-0 md:mt-10">
           {subheadings.map((_, i) => (
-            <a key={i} href={`#subheading-${i + 1}`}>
+            <a key={i} href={`#subheading-${i + 4}`}>
               <img
-                src={`/images/${i + 1}.png`}
-                alt={`Go to subheading ${i + 1}`}
+                src={`/images/${i + 4}.png`}
+                alt={`Go to subheading ${i + 4}`}
                 className="w-[225px] h-[225px] md:w-[350px] md:h-[350px] object-cover rounded-lg cursor-pointer transition-transform duration-300 md:hover:scale-110"
               />
             </a>
