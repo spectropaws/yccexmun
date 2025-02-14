@@ -1,5 +1,5 @@
 import Image from "next/image";
-import MUNImage from "../public/demo-mun.png";
+import MUNImage from "../public/images/What-is-MUN.jpeg";
 import { ContentSectionCardData } from "../data";
 
 const ContentSection = () => {
@@ -23,20 +23,25 @@ const ContentSection = () => {
           {/* MUN Description */}
           <div className="text-center md:text-left space-y-4">
             <p className="text-lg leading-relaxed text-[#6A3A2A]">
-              The <strong>Model United Nations (MUN)</strong> is an engaging
-              simulation of the United Nations, where students step into the
-              roles of global delegates, representing different countries to
-              tackle real-world issues.
+              <strong>Model United Nations (MUN)</strong> is an academic
+              simulation of the United Nations, where students take on the role
+              of delegates, representing different countries in various UN
+              committees. Participants engage in structured debates, negotiate
+              policies, and draft resolutions on pressing global issues, just as
+              real-world UN representatives do.
             </p>
             <br />
             <p className="text-lg leading-relaxed text-[#6A3A2A]">
-              At <strong>YCCE MUN</strong>, we cultivate a space where young
-              minds refine their leadership, diplomatic, and problem-solving
-              skills, preparing them for impactful roles in international
-              affairs.
+              Each delegate is assigned a country and a committee, where they
+              research international policies, analyse current affairs, and
+              collaborate with others to develop effective solutions.
             </p>
           </div>
         </div>
+
+        <h3 className="text-3xl font-bold bg-gradient-to-t from-[#C2A597] to-[#54250B] bg-clip-text text-transparent text-center mb-8">
+          Why Participate in MUN?
+        </h3>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
           {ContentSectionCardData.map((feature, index) => (

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import MUNImage from "../../public/demo-mun.png";
+import RubyJubileeImg from "../../public/images/ruby-jubliee.jpg";
 import YCCE from "../../public/images/ycce.png";
 
 export default function Page() {
@@ -53,7 +54,7 @@ export default function Page() {
             </p>
           </div>
           <Image
-            src={MUNImage}
+            src={RubyJubileeImg}
             alt="Ruby Jubilee"
             className="w-full max-h-80 object-cover rounded-lg shadow-lg"
           />
