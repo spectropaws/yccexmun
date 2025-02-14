@@ -57,7 +57,7 @@ const CardGrid = () => {
 
         return (
           <div key={i} className="mb-16">
-            <div id={`subheading-${i + 1}`} className="scroll-mt-20 md:scroll-mt-32"></div>
+            <div id={`subheading-${i + 4}`} className="scroll-mt-20 md:scroll-mt-32"></div>
 
             {/* MOBILE VIEW */}
             <div className="md:hidden">
