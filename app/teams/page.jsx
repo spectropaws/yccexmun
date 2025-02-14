@@ -43,7 +43,7 @@ export default function Page() {
             <h2 className="text-2xl text-center font-semibold mb-6 text-[#54250B]">
               {team.name}
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+            <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-4 sm:gap-6 md:gap-8">
               {team.members.map((member, i) => (
                 <MemberCard key={i} member={member} />
               ))}
@@ -57,16 +57,17 @@ export default function Page() {
 
 function MemberCard({ member }) {
   return (
-    <div className="flex flex-col items-center justify-evenly max-w-xs mx-auto border p-2 rounded-lg border-gray-300">
+    <div className="flex flex-col items-center justify-start w-4/5 sm:w-full max-w-xs mx-auto border p-2 rounded-lg border-gray-300">
       <img
         src={member.image}
         alt={member.name}
-        className="w-full aspect-square object-cover rounded-sm"
+        className="h-72 w-full object-cover object-center rounded-sm"
       />
       <div className="flex flex-row items-center px-1 py-3 w-full">
         <div className="text-left w-full">
           <h3 className="text-lg font-semibold text-black">
-            {member.githubURL ? (
+            {member.name}
+            {/* {member.githubURL ? (
               <a
                 href={member.githubURL}
                 target="_blank"
@@ -77,11 +78,11 @@ function MemberCard({ member }) {
               </a>
             ) : (
               member.name
-            )}
+            )} */}
           </h3>
           <p className="text-sm text-gray-600">{member.role}</p>
         </div>
-        {member.linkedinURL && (
+        {/* {member.linkedinURL && (
           <a
             href={member.linkedinURL}
             target="_blank"
@@ -90,7 +91,7 @@ function MemberCard({ member }) {
           >
             <Linkedin01Icon />
           </a>
-        )}
+        )} */}
       </div>
     </div>
   );
