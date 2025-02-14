@@ -1,7 +1,7 @@
 "use client";
 
 import Linkedin01Icon from "../public/svg/Linkedin01Icon";
-import { FooterContactInfo, FooterLinkData, teamsData } from "../data";
+import { FooterContactInfo, FooterLinkData, footerTechnicalTeamModalData } from "../data";
 import { Instagram, Link, MapPinned } from "lucide-react";
 import GithubIcon from "../public/svg/GithubIcon";
 
@@ -68,7 +68,7 @@ const Footer = () => {
                 className="underline underline-offset-2 hover:text-[#2563EB] text-base opacity-80 mt-1 cursor-pointer"
                 onClick={() => document.getElementById("my_modal").showModal()}
               >
-                MUN Technical Team @CSE
+                MUN Technical Team
               </button>
               <TechnicalTeamModalComponent />
             </div>
@@ -125,7 +125,7 @@ export const TechnicalTeamModalComponent = () => {
           Designed & Developed by
         </h3>
 
-        {teamsData.map((team, teamIndex) => {
+        {footerTechnicalTeamModalData.map((team, teamIndex) => {
           if (team.name === "Technical Team") {
             return (
               <div key={teamIndex} className="space-y-4">
@@ -135,8 +135,7 @@ export const TechnicalTeamModalComponent = () => {
                     className="flex justify-between items-center border-b border-gray-300 pb-4"
                   >
                     <div>
-                      {/* Animated Name */}
-                      <h4 className="text-lg font-semibold animate-gradient-text bg-gradient-to-r from-red-500 via-orange-500 via-yellow-500 via-green-500 via-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent">
+                      <h4 className="relative text-lg font-semibold bg-gradient-to-r from-red-500 via-orange-500 via-yellow-500 via-green-500 via-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent transition-all duration-500 ease-out hover:scale-110 before:absolute before:inset-0 before:bg-gradient-to-r before:from-red-500 before:via-orange-500 before:via-yellow-500 before:via-green-500 before:via-blue-500 before:via-indigo-500 before:to-purple-500 before:blur-lg before:opacity-0 hover:before:opacity-30">
                         {member.name}
                       </h4>
                     </div>
