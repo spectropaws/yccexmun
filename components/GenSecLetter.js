@@ -13,7 +13,7 @@ const GenSecLetter = () => {
       <section className="gen-sec-letter">
         <div className="flex flex-col lg:flex-row items-start justify-start gap-10 lg:gap-20">
           <div className="flex-1">
-            <h2 className="text-2xl font-bold mt-8 mb-8"> <span className="text-6xl font-bold">“</span>Message  from the General Secretary</h2>
+            <h2 className="text-2xl font-bold mt-8 mb-8"> <span className="text-6xl font-bold">“</span>Message  from the Secretariat General</h2>
             <p>
               
               <span className="font-semibold">Dear Delegates and Honored Guests,</span><br />
@@ -28,17 +28,17 @@ const GenSecLetter = () => {
             {chunkedSlides.map((chunk, index) => (
               <div
                 key={index}
-                className="w-full h-full bg-white p-6 border border-[#D8C2A8] rounded-xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative flex flex-col justify-between"
+                className="w-full h-full bg-white p-1 border border-[#D8C2A8] rounded-xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative flex flex-col justify-between"
                 style={{ height: 'auto' }}
               >
                 <img
                   src={chunk.image}
                   alt={chunk.name}
-                  className="w-full h-auto object-cover" 
+                  className="w-full h-auto rounded-md object-cover" 
                   style={{ maxHeight: '200px', objectFit: 'cover' }}
                 />
-                <div className="p-4 flex flex-col justify-between h-full">
-                  <h3 className="text-xl font-semibold text-center">{chunk.name}</h3>
+                <div className="p-2 flex flex-col justify-between h-full">
+                  <h3 className="text-base font-semibold text-center">{chunk.name}</h3>
                 </div>
               </div>
             ))}
