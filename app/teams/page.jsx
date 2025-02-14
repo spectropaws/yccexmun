@@ -43,7 +43,7 @@ export default function Page() {
             <h2 className="text-2xl text-center font-semibold mb-6 text-[#54250B]">
               {team.name}
             </h2>
-            <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-4 sm:gap-6 md:gap-8">
+            <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-4 sm:gap-6 md:gap-8 lg:gap-10">
               {team.members.map((member, i) => (
                 <MemberCard key={i} member={member} />
               ))}
