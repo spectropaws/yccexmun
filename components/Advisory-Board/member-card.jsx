@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -19,7 +19,9 @@ const MemberCard = ({ imgSrc, position, name, description, index }) => {
       }  mt-20`}
     >
       <div className="md:w-[40%] w-full overflow-hidden rounded-lg hover:shadow-lg">
-        <img
+        <Image
+          width={500}
+          height={500}
           src={imgSrc}
           alt={name}
           className="w-full object-cover object-center h-96"
