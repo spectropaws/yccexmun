@@ -14,13 +14,13 @@ const Sponsors = () => {
             <img src="sponsors/sponsor1.png" alt="" />
           </div>
           <div className="grid place-items-center hover:scale-125 duration-300">
-            <img src="sponsors/sponsor2.png" alt="" />
+            <img src="sponsors/sponsor1.png" alt="" />
           </div>
           <div className="grid place-items-center hover:scale-125 duration-300">
-            <img src="sponsors/sponsor3.png" alt="" />
+            <img src="sponsors/sponsor1.png" alt="" />
           </div>
           <div className="grid place-items-center hover:scale-125 duration-300">
-            <img src="sponsors/sponsor4.png" alt="" />
+            <img src="sponsors/sponsor1.png" alt="" />
           </div>
         </div>
       </div>

@@ -53,14 +53,16 @@ const Navbar = () => {
               </button>
 
               {/* ---------------------------Dialog--------------------- */}
-              <dialog id="nav_modal" className="modal">
-                <div className="modal-box h-[700px] bg-white">
+              <dialog id="nav_modal" className="modal" data-theme="light">
+                <div className="modal-box max-h-[700px] bg-white">
                   <form method="dialog">
                     <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                       ✕
                     </button>
                   </form>
-                  <h3 className="font-bold text-lg">Register here</h3>
+                  <h3 className="font-bold text-lg text-start text-gray-800 mb-4">
+                    Register Here
+                  </h3>
                   <div>
                     <iframe
                       src="https://konfhub.com/widget/ycce-x-mun?desc=false&secondaryBg=F7F7F7&ticketBg=F7F7F7&borderCl=F7F7F7&bg=FFFFFF&fontColor=572148&ticketCl=572148&btnColor=fb5850&fontFamily=Prompt&borderRadius=10"
@@ -123,7 +125,7 @@ const Navbar = () => {
           </button>
 
           {/* ---------------------------Dialog */}
-          <dialog id="nav_mobile_modal" className="modal">
+          <dialog id="nav_mobile_modal" className="modal" data-theme={"light"}>
             <div className="modal-box h-[700px] bg-white">
               <form method="dialog">
                 <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">

@@ -1,10 +1,10 @@
 // Important date Timeline
 export const EventDates = [
-  { event: "Registration Starts", date: "12 Feb 2025" },
-  { event: "Registration Deadline", date: "28 Feb 2025" },
-  { event: "Teams Announcement", date: "07 Mar 2025" },
+  { event: "Registration Begins", date: "14 Feb 2025" },
+  { event: "Registration Deadline", date: "08 Mar 2025" },
+  { event: "Delegation Assigning", date: "10 Mar 2025" },
   { event: "Orientation Session", date: "18 Mar 2025" },
-  { event: "MUN Finals", date: "22 Mar 2025" },
+  { event: "MUN Conference", date: "22 Mar 2025" },
   { event: "Award Ceremony", date: "23 Mar 2025" },
 ];
 
@@ -42,28 +42,31 @@ export const FooterLinkData = [
 
 // Navbar Links Data
 export const NavbarLinksData = [
+  { url: "/", title: "Home" },
   { url: "/about", title: "About Us" },
-  { url: "/#schedule", title: "Event Schedule" },
-  { url: "/advisory-board", title: "Advisory Board" },
   { url: "/chairs", title: "Commitee" },
+  { url: "/teams", title: "Teams" },
+  { url: "/advisory-board", title: "Advisory Board" },
+  { url: "/#schedule", title: "Event Schedule" },
+  { url: "/#footer", title: "Contact Us" },
 ];
 
 //  Content Section
 export const ContentSectionCardData = [
   {
-    title: "Diplomacy in Action",
+    title: "Skill Development",
     description:
-      "Engage in stimulating debates, represent nations, and craft solutions for global challenges, gaining firsthand experience in international relations.",
+      "Enhance your public speaking, negotiation, and leadership abilities while refining research and critical thinking skills.",
   },
   {
-    title: "Build Essential Skills",
+    title: "Real-World Experience",
     description:
-      "Enhance your public speaking, negotiation, and leadership skills—empowering you to think critically and communicate with confidence.",
+      "Gain hands-on exposure to global problem-solving and UN-style decision-making, preparing you for real diplomatic challenges.",
   },
   {
-    title: "A Legacy of Excellence",
+    title: "Networking Opportunities",
     description:
-      "As part of YCCE’s Ruby Jubilee, this event celebrates 40 years of academic leadership, innovation, and fostering future changemakers.",
+      "Connect with like-minded peers, professionals, and global leaders, expanding your horizons and career prospects.",
   },
 ];
 
