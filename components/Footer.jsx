@@ -1,7 +1,11 @@
 "use client";
 
 import Linkedin01Icon from "../public/svg/Linkedin01Icon";
-import { FooterContactInfo, FooterLinkData, footerTechnicalTeamModalData } from "../data";
+import {
+  FooterContactInfo,
+  FooterLinkData,
+  footerTechnicalTeamModalData,
+} from "../data";
 import { Instagram, Link, MapPinned } from "lucide-react";
 import GithubIcon from "../public/svg/GithubIcon";
 
@@ -115,29 +119,36 @@ export default Footer;
 export const TechnicalTeamModalComponent = () => {
   return (
     <dialog id="my_modal" className="modal" data-theme="light">
-      <div className="modal-box bg-white">
+      <div className="relative modal-box bg-white p-6 rounded-lg">
+
+        <div className="absolute inset-0 rounded-lg border-2 border-transparent bg-gradient-to-r from-red-500 via-orange-500 via-yellow-500 via-green-500 via-blue-500 via-indigo-500 to-purple-500 p-[2px]">
+          <div className="h-full w-full bg-white rounded-lg"></div>
+        </div>
+
         <form method="dialog">
           <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
             ✕
           </button>
         </form>
-        <h3 className="font-bold text-2xl text-center text-[#54250B] mb-4">
+
+        <h3 className="relative font-bold text-2xl text-center text-[#54250B] mb-4">
           Designed & Developed by
         </h3>
 
         {footerTechnicalTeamModalData.map((team, teamIndex) => {
           if (team.name === "Technical Team") {
             return (
-              <div key={teamIndex} className="space-y-4">
+              <div key={teamIndex} className="space-y-4 relative">
                 {team.members.map((member, memberIndex) => (
                   <div
                     key={memberIndex}
                     className="flex justify-between items-center border-b border-gray-300 pb-4"
                   >
                     <div>
-                      <h4 className="relative text-lg font-semibold bg-gradient-to-r from-red-500 via-orange-500 via-yellow-500 via-green-500 via-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent transition-all duration-500 ease-out hover:scale-110 before:absolute before:inset-0 before:bg-gradient-to-r before:from-red-500 before:via-orange-500 before:via-yellow-500 before:via-green-500 before:via-blue-500 before:via-indigo-500 before:to-purple-500 before:blur-lg before:opacity-0 hover:before:opacity-30">
+                      <h4 className="relative text-left text-lg font-semibold bg-gradient-to-r from-red-500 via-orange-500 via-yellow-500 via-green-500 via-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent transition-all duration-500 ease-out hover:scale-110 before:absolute before:inset-0 before:bg-gradient-to-r before:from-red-500 before:via-orange-500 before:via-yellow-500 before:via-green-500 before:via-blue-500 before:via-indigo-500 before:to-purple-500 before:blur-lg before:opacity-0 hover:before:opacity-30">
                         {member.name}
                       </h4>
+                      <p>{member.role}</p>
                     </div>
                     <div className="flex space-x-4">
                       <a

@@ -13,9 +13,15 @@ import { Phone, Mail, Globe } from "lucide-react";
 
 export const FooterContactInfo = [
   {
-    title: "Phone: ",
-    url: "tel:+919999999999",
-    value: "9999999999",
+    title: "Kushal Javkhedkar: ",
+    url: "tel:+919359989485",
+    value: "9359989485",
+    icon: <Phone className="h-4 w-4 text-[#54250B]" />,
+  },
+  {
+    title: "Yugandhara Jagtap: ",
+    url: "tel:+919322035493",
+    value: "9322035493",
     icon: <Phone className="h-4 w-4 text-[#54250B]" />,
   },
   {
@@ -38,6 +44,49 @@ export const FooterLinkData = [
   { url: "/advisory-board", title: "Advisory Board" },
   { url: "/chairs", title: "Chairs" },
   { url: "/teams", title: "Teams" },
+];
+
+export const footerTechnicalTeamModalData = [
+  {
+    name: "Technical Team",
+    members: [
+      {
+        name: "Om Mane",
+        role: "USG Technical",
+        image:
+          "https://media.istockphoto.com/id/1344688156/photo/portrait-of-a-man-using-a-computer-in-a-modern-office.jpg?s=612x612&w=0&k=20&c=xQsoWWZXJ1ydmmCGgnHyuVYUc7BILG1FauoHcloDnG4=",
+        linkedinURL:
+          "https://www.linkedin.com/in/om-mane-20479a25b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        githubURL: "https://www.github.com/spectropaws",
+      },
+      {
+        name: "Rishabh Gokhe",
+        role: "Frontend Developer",
+        image:
+          "https://media.licdn.com/dms/image/v2/D5603AQENv39NDiibWw/profile-displayphoto-shrink_400_400/B56ZTVi_EjGsAg-/0/1738749509576?e=1744243200&v=beta&t=WVCpt81Hfga7eOp3bZiD7p4Rra8UtOpJlGK5z_caHC4",
+        linkedinURL: "https://www.linkedin.com/in/rishabh-gokhe",
+        githubURL: "https://www.github.com/rishabhgokhe",
+      },
+      {
+        name: "Atul Thakre",
+        role: "Frontend Developer",
+        image:
+          "https://media.licdn.com/dms/image/v2/D5603AQFZ3aSXzI4F7A/profile-displayphoto-shrink_400_400/B56ZQ8K9lKHoAk-/0/1736176296675?e=1744243200&v=beta&t=SIJMVx2EhlC4sEUQOIpg39tlWzeEMxPDLfPKmuj6A00",
+        linkedinURL:
+          "https://www.linkedin.com/in/atul-thakre-logers?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        githubURL: "https://www.github.com/Atul-ThakreLO",
+      },
+      {
+        name: "Akansha Sawant",
+        role: "Frontend Developer",
+        image:
+          "https://media.istockphoto.com/id/960937636/photo/woman-hands-coding-html-and-programming-on-screen-laptop-web-developer.jpg?s=612x612&w=0&k=20&c=MSLlYt0QRwyRenwhZAhSerwvs-3qt9QjieJ0ta2MAuc=",
+        linkedinURL:
+          "https://www.linkedin.com/in/akanksha-sawant-2598a1305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        githubURL: "https://www.github.com/nastyax0",
+      },
+    ],
+  },
 ];
 
 // Navbar Links Data
@@ -274,47 +323,4 @@ export const agendas = [
   "Debate on Efficacy of Anti-Conversion Laws: Protecting Freedom of Religion vs Majoritarianism.",
   "Reassessing the Rights of Refugees in the Context of Global Refugee Crisis.",
   "United Nations Security Council Reforms: A Step Towards Democratizing Global Governance?",
-];
-
-export const footerTechnicalTeamModalData = [
-  {
-    name: "Technical Team",
-    members: [
-      {
-        name: "Rishabh Gokhe",
-        role: "Frontend Developer",
-        image:
-          "https://media.licdn.com/dms/image/v2/D5603AQENv39NDiibWw/profile-displayphoto-shrink_400_400/B56ZTVi_EjGsAg-/0/1738749509576?e=1744243200&v=beta&t=WVCpt81Hfga7eOp3bZiD7p4Rra8UtOpJlGK5z_caHC4",
-        linkedinURL: "https://www.linkedin.com/in/rishabh-gokhe",
-        githubURL: "https://www.github.com/rishabhgokhe",
-      },
-      {
-        name: "Om Mane",
-        role: "USG Technical",
-        image:
-          "https://media.istockphoto.com/id/1344688156/photo/portrait-of-a-man-using-a-computer-in-a-modern-office.jpg?s=612x612&w=0&k=20&c=xQsoWWZXJ1ydmmCGgnHyuVYUc7BILG1FauoHcloDnG4=",
-        linkedinURL:
-          "https://www.linkedin.com/in/om-mane-20479a25b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        githubURL: "https://www.github.com/spectropaws",
-      },
-      {
-        name: "Atul Thakre",
-        role: "Frontend Developer",
-        image:
-          "https://media.licdn.com/dms/image/v2/D5603AQFZ3aSXzI4F7A/profile-displayphoto-shrink_400_400/B56ZQ8K9lKHoAk-/0/1736176296675?e=1744243200&v=beta&t=SIJMVx2EhlC4sEUQOIpg39tlWzeEMxPDLfPKmuj6A00",
-        linkedinURL:
-          "https://www.linkedin.com/in/atul-thakre-logers?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        githubURL: "https://www.github.com/Atul-ThakreLO",
-      },
-      {
-        name: "Akansha Sawant",
-        role: "Frontend Developer",
-        image:
-          "https://media.istockphoto.com/id/960937636/photo/woman-hands-coding-html-and-programming-on-screen-laptop-web-developer.jpg?s=612x612&w=0&k=20&c=MSLlYt0QRwyRenwhZAhSerwvs-3qt9QjieJ0ta2MAuc=",
-        linkedinURL:
-          "https://www.linkedin.com/in/akanksha-sawant-2598a1305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        githubURL: "https://www.github.com/nastyax0",
-      },
-    ],
-  },
 ];
