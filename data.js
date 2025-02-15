@@ -126,8 +126,9 @@ export const teamsData = [
     members: [
       {
         name: "Kushal Javkhedkar",
-        role: "General Secretariat",
+        role: "Secretariat General",
         image: "/USG/Kushal1.jpg",
+
       },
       {
         name: "Yugandhara Jagtap",
@@ -138,7 +139,7 @@ export const teamsData = [
         name: "Paras Kalbande",
         role: "Deputy General Secretariat",
         image:
-          "https://media.istockphoto.com/id/960937636/photo/woman-hands-coding-html-and-programming-on-screen-laptop-web-developer.jpg?s=612x612&w=0&k=20&c=MSLlYt0QRwyRenwhZAhSerwvs-3qt9QjieJ0ta2MAuc=",
+          "/USG/Kushal1.jpg",
       },
       {
         name: "Avanti Raut",
@@ -149,7 +150,7 @@ export const teamsData = [
         name: "Karan Kangali",
         role: "USG Logistics, EM, Finance",
         image:
-          "https://media.istockphoto.com/id/960937636/photo/woman-hands-coding-html-and-programming-on-screen-laptop-web-developer.jpg?s=612x612&w=0&k=20&c=MSLlYt0QRwyRenwhZAhSerwvs-3qt9QjieJ0ta2MAuc=",
+          "/USG/Kushal1.jpg",
       },
       {
         name: "Dhruv Munghate",
@@ -177,10 +178,9 @@ export const teamsData = [
         image: "/USG/Chitraksh Chavan _ Design Head.jpg",
       },
       {
-        name: "Bhuvanesh Chavan",
+        name: "Bhuvanesh Dorle",
         role: "USG Database",
-        image:
-          "https://media.istockphoto.com/id/960937636/photo/woman-hands-coding-html-and-programming-on-screen-laptop-web-developer.jpg?s=612x612&w=0&k=20&c=MSLlYt0QRwyRenwhZAhSerwvs-3qt9QjieJ0ta2MAuc=",
+        image: "/USG/Kushal1.jpg",
       },
       {
         name: "Aditya Rajankar",

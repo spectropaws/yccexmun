@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { teamsData } from "../../data";
 import Linkedin01Icon from "../../public/svg/Linkedin01Icon";
+import Image from "next/image";
 
 export default function Page() {
   const teamRefs = useRef([]);
@@ -58,7 +59,9 @@ export default function Page() {
 function MemberCard({ member }) {
   return (
     <div className="flex flex-col items-center justify-start w-4/5 sm:w-full max-w-xs mx-auto border p-2 rounded-lg border-gray-300">
-      <img
+      <Image
+        width={500}
+        height={500}
         src={member.image}
         alt={member.name}
         className="h-72 w-full object-cover object-center rounded-sm"
