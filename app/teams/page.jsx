@@ -31,7 +31,7 @@ export default function Page() {
         className="text-4xl bg-gradient-to-t from-[#C2A597] to-[#54250B] bg-clip-text text-transparent font-bold text-center mb-12 opacity-0"
         ref={(el) => (teamRefs.current[0] = el)}
       >
-        Meet Our Teams
+        Meet Our Team
       </h1>
 
       <div className="space-y-10">
