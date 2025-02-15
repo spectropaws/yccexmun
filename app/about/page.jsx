@@ -3,6 +3,7 @@ import MUNImage from "../../public/demo-mun.png";
 import RubyJubileeImg from "../../public/images/ruby-jubliee.jpg";
 import CseDepImg from "../../public/images/cse-department.png"
 import YCCE from "../../public/images/ycce.png";
+import DepartmentImage from "../../public/images/Department_Image.png";
 
 export default function Page() {
   return (
@@ -64,7 +65,7 @@ export default function Page() {
         {/* ABOUT DEPARTMENT */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <Image
-            src={CseDepImg}
+            src={DepartmentImage}
             alt="Department of CSE"
             className="w-full max-h-80 object-cover rounded-lg shadow-lg hidden md:block"
           />

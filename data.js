@@ -24,28 +24,22 @@ export const FooterContactInfo = [
     value: "yccexmun@gmail.com",
     icon: <Mail className="h-4 w-4 text-[#54250B]" />,
   },
-  {
-    title: "Website: ",
-    url: "https://www.yccexmun.com",
-    value: "www.yccexmun.com",
-    icon: <Globe className="h-4 w-4 text-[#54250B]" />,
-  },
 ];
 
 export const FooterLinkData = [
   { url: "/about", title: "About Us" },
-  { url: "#schedule", title: "Event Schedule" },
+  { url: "/#schedule", title: "Event Schedule" },
   { url: "/advisory-board", title: "Advisory Board" },
-  { url: "/chairs", title: "Chairs" },
-  { url: "/teams", title: "Teams" },
+  { url: "/chairs", title: "Committees" },
+  { url: "/teams", title: "Team" },
 ];
 
 // Navbar Links Data
 export const NavbarLinksData = [
   { url: "/", title: "Home" },
   { url: "/about", title: "About Us" },
-  { url: "/chairs", title: "Commitee" },
-  { url: "/teams", title: "Teams" },
+  { url: "/chairs", title: "Committees" },
+  { url: "/teams", title: "Team" },
   { url: "/advisory-board", title: "Advisory Board" },
   { url: "/#schedule", title: "Event Schedule" },
   { url: "/#footer", title: "Contact Us" },
@@ -89,9 +83,9 @@ export const teamsData = [
       },
       {
         name: "Paras Kalbande",
-        role: "Deputy General Secretariat",
+        role: "Deputy Secretariat General",
         image:
-          "/USG/Kushal1.jpg",
+          "/USG/Paras Kalbande_DeputyGenSec.jpg",
       },
       {
         name: "Avanti Raut",
@@ -103,7 +97,7 @@ export const teamsData = [
         name: "Karan Kangali",
         role: "USG Logistics, EM, Finance",
         image:
-          "/USG/Kushal1.jpg",
+          "/USG/Karan.jpg",
       },
       {
         name: "Dhruv Munghate",
@@ -113,7 +107,7 @@ export const teamsData = [
       {
         name: "Ridhi Nahate",
         role: "USG Hospitality & Volunteer In-Charge",
-        image: "/USG/RiddhiNahate_Hospitality& VolenteersIncharge.jpg",
+        image: "/USG/Riddhi.jpg",
       },
       {
         name: "Om Mane",
@@ -136,7 +130,7 @@ export const teamsData = [
         name: "Bhuvanesh Dorle",
         role: "USG Database",
         image:
-          "/USG/Kushal1.jpg",
+          "/USG/Bhuvanesh Dorle_Database.jpg",
 
       },
       {
@@ -158,7 +152,7 @@ export const teamsData = [
       {
         name: "Diya Choudhari",
         role: "USG Hall Management",
-        image: "/USG/Diya Choudhari_HM.jpg",
+        image: "/USG/Diya Choudhari_ H M.jpg",
       },
       {
         name: "Ayush Sontakke",
