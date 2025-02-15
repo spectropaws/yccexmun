@@ -3,7 +3,7 @@ import React from "react";
 const Linkedin01Icon = ({
   width = 32,
   height = 32,
-  color = "#000000",
+  color = "#0a66c2",
   ...props
 }) => (
   <svg

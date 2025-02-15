@@ -47,7 +47,7 @@ const ContentSection = () => {
           {ContentSectionCardData.map((feature, index) => (
             <div
               key={index}
-              className="text-center p-6 border border-[#D8C2A8] bg-white rounded-xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl"
+              className="text-center cursor-default p-6 border border-[#D8C2A8] bg-white rounded-xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl"
             >
               <div className="flex items-center justify-center">
                 <h3 className="text-2xl font-semibold text-[#54250B] mb-3">
