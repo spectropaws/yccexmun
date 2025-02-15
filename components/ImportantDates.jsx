@@ -29,7 +29,7 @@ const ImportantDates = () => {
                   {index !== 0 && <hr className={hrColor} />}
 
                   {index % 2 === 0 ? (
-                    <div className="timeline-start md:my-3 bg-white border-zinc-300 rounded-md px-4 py-2 transition-all ease-in-out transform hover:scale-105 hover:shadow-2xl hover:bg-[#F9F9F9] border-2 border-transparent hover:border-[#C2A597]">
+                    <div className="timeline-start cursor-default md:my-3 bg-white border-zinc-300 rounded-md px-4 py-2 transition-all ease-in-out transform hover:scale-105 hover:shadow-2xl hover:bg-[#F9F9F9] border-2 border-transparent hover:border-[#C2A597]">
                       {event.event}
                     </div>
                   ) : (
@@ -47,7 +47,7 @@ const ImportantDates = () => {
                       {event.date}
                     </div>
                   ) : (
-                    <div className="timeline-end md:my-3 bg-white border-zinc-300 rounded-md px-4 py-2 transition-all ease-in-out transform hover:scale-105 hover:shadow-2xl hover:bg-[#F9F9F9] border-2 border-transparent hover:border-[#C2A597]">
+                    <div className="timeline-end cursor-default md:my-3 bg-white border-zinc-300 rounded-md px-4 py-2 transition-all ease-in-out transform hover:scale-105 hover:shadow-2xl hover:bg-[#F9F9F9] border-2 border-transparent hover:border-[#C2A597]">
                       {event.event}
                     </div>
                   )}
