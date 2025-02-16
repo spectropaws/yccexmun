@@ -93,7 +93,7 @@ export const footerTechnicalTeamModalData = [
 export const NavbarLinksData = [
   { url: "/", title: "Home" },
   { url: "/about", title: "About Us" },
-  { url: "/chairs", title: "Commitee" },
+  { url: "/chairs", title: "Commitees" },
   { url: "/teams", title: "Teams" },
   { url: "/advisory-board", title: "Advisory Board" },
   { url: "/#schedule", title: "Event Schedule" },
