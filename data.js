@@ -146,7 +146,7 @@ export const teamsData = [
         name: "Karan Kangali",
         role: "USG Logistics, EM, Finance",
         image:
-          "/USG/Kushal1.jpg",
+          "/USG/Karan.jpg",
       },
       {
         name: "Dhruv Munghate",
