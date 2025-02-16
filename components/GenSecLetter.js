@@ -1,9 +1,10 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const GenSecLetter = () => {
   const chunkedSlides = [
     {
-      image: "images/Kushal1.jpg",
+      image: "/images/Kushal1.jpg",
       name: "Kushal Javkhedkar"
     }
   ];
@@ -31,9 +32,11 @@ const GenSecLetter = () => {
                 className="w-full h-full bg-white p-1 border border-[#D8C2A8] rounded-xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative flex flex-col justify-between"
                 style={{ height: 'auto' }}
               >
-                <img
+                <Image
                   src={chunk.image}
                   alt={chunk.name}
+                  width={350} 
+                  height={200} 
                   className="w-full h-auto rounded-md object-cover" 
                   style={{ maxHeight: '200px', objectFit: 'cover' }}
                 />

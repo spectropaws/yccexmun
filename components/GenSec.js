@@ -1,8 +1,9 @@
+import Image from "next/image";
 export default function LetterPage() {
   const GenSecLetter = () => {
     const chunkedSlides = [
       {
-        image: "images/Kushal.jpg",
+        image: "/images/Kushal.jpg",
         name: "Kushal Javkhedkar"
       }
     ];
@@ -44,9 +45,11 @@ export default function LetterPage() {
             </div>
             
             <div className="w-full md:w-1/2 relative flex rounded-lg justify-center md:justify-end mt-4 md:mt-0">
-              <img
-                src="images/Kushal.jpg"
+              <Image
+                src="/images/Kushal.jpg"
                 alt="Kushal Javkhedkar"
+                width={350} 
+                height={200} 
                 className="w-3/4 h-auto md:w-1/2 md:h-auto rounded-lg md:absolute md:top-40 md:right-40"
               />
             </div>

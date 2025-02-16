@@ -4,11 +4,19 @@ import { useState, useEffect, useRef } from 'react';
 import throttle from "lodash.throttle";
 import './ui/styles.css';
 
+import Image from "next/image";
+
 const CardGrid = () => {
   const [activeSubheading, setActiveSubheading] = useState(null);
 
   
   const subheadingRefs = useRef([]);
+
+  const backgroundGuides = [
+    "Guide/AIPPM Background Guide.pdf", 
+    "Guide/UNHRC Background Guide.pdf", 
+    "Guide/UNGA Background Guide.pdf",
+  ];
 
   useEffect(() => {
    
@@ -37,9 +45,11 @@ const CardGrid = () => {
         <div className="flex flex-col md:flex-row justify-between items-center md:space-x-6 space-y-3 md:space-y-0 md:mt-10">
           {subheadings.map((_, i) => (
             <a key={i} href={`#subheading-${i + 4}`}>
-              <img
+              <Image
                 src={`/images/${i + 4}.png`}
                 alt={`Go to subheading ${i + 4}`}
+                width={350} 
+                height={200}
                 className="w-[225px] h-[225px] md:w-[350px] md:h-[350px] object-cover rounded-lg cursor-pointer transition-transform duration-300 md:hover:scale-110"
               />
             </a>
@@ -84,9 +94,11 @@ const CardGrid = () => {
                 {evenSlide && (
                   <div className="mt-30 mb-4">
                     <div className="w-[300px] mx-auto bg-white p-6 border border-[#D8C2A8] rounded-xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                    <img 
+                    <Image 
           src={evenSlide.image} 
           alt={evenSlide.name} 
+          width={350} 
+          height={200} 
           className="w-full h-48 object-cover rounded-md" 
           style={{ objectPosition: 'center top' }} 
         />
@@ -100,11 +112,13 @@ const CardGrid = () => {
                 {oddSlide && (
                   <div className="mt-8 mb-8">
                     <div className="w-[300px] mx-auto bg-white p-6 border border-[#D8C2A8] rounded-xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                    <img 
+                    <Image
           src={oddSlide.image} 
-          alt={oddSlide.name} 
-          className="w-full h-48 object-cover rounded-md" // Ensure it covers the space correctly
-          style={{ objectPosition: 'center top' }} // Example of custom positioning
+          alt={oddSlide.name}
+          width={350} 
+          height={200}  
+          className="w-full h-48 object-cover rounded-md" 
+          style={{ objectPosition: 'center top' }} 
         />
                       <div className="p-4 text-center">
                         <h3 className="text-xl font-semibold">{oddSlide.name}</h3>
@@ -116,8 +130,8 @@ const CardGrid = () => {
               </div>
 
               <div className="flex justify-center mt-4">
-                <a
-                  href="/background_guide.pdf"
+              <a
+                  href={backgroundGuides[i]}
                   download
                   className="bg-[#C2A597] py-2 px-6 rounded-md text-lg hover:bg-gradient-to-r hover:from-[#FF7E5F] hover:to-[#feb47b] transition-all ease-in-out duration-500"
                 >
@@ -151,9 +165,11 @@ const CardGrid = () => {
                 <div className="md:w-2/5 mt-2 flex justify-end">
                   {evenSlide && (
                     <div className="w-[400px] bg-white p-6 border border-[#D8C2A8] rounded-xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                      <img 
+                      <Image 
           src={evenSlide.image} 
-          alt={evenSlide.name} 
+          alt={evenSlide.name}
+          width={350} 
+          height={200}  
           className="w-full h-48 object-cover rounded-md" 
           style={{ objectPosition: 'center top' }} 
         />
@@ -172,9 +188,11 @@ const CardGrid = () => {
                 <div className="md:w-2/5 flex justify-start">
                   {oddSlide && (
                     <div className="w-[400px] bg-white p-6 border border-[#D8C2A8] rounded-xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                      <img 
+                      <Image 
           src={oddSlide.image} 
           alt={oddSlide.name} 
+          width={350} 
+          height={200} 
           className="w-full h-48 object-cover rounded-md" 
           style={{ objectPosition: 'center top' }} 
         />
@@ -193,13 +211,13 @@ const CardGrid = () => {
 
                  
                   <div className="flex justify-end mt-4">
-                    <a
-                      href="/background_guide.pdf"
-                      download
-                      className="bg-[#C2A597] py-2 px-6 rounded-md text-lg hover:bg-gradient-to-r hover:from-[#FF7E5F] hover:to-[#feb47b] transition-all ease-in-out duration-500"
-                    >
-                      Background Guide
-                    </a>
+                  <a
+                  href={backgroundGuides[i]}
+                  download
+                  className="bg-[#C2A597] py-2 px-6 rounded-md text-lg hover:bg-gradient-to-r hover:from-[#FF7E5F] hover:to-[#feb47b] transition-all ease-in-out duration-500"
+                >
+                  Background Guide
+                </a>
                   </div>
                 </div>
               </div>
