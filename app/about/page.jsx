@@ -40,14 +40,14 @@ export default function Page() {
             <h2 className="text-3xl text-center md:text-left font-semibold text-[#54250B] mb-4">
               ABOUT RUBY JUBILEE
             </h2>
-            <p className="text-gray-700">
+            <p className="text-gray-700 text-justify">
               Marking 40 years of excellence, YCCE’s Ruby Jubilee celebrates its
               legacy of engineering education, research, and innovation. Since
               its establishment in 1984, YCCE has been a pioneer in shaping
               engineers and leaders, continuously evolving to meet the demands
               of the modern world.
             </p>
-            <p className="text-gray-700 mt-4">
+            <p className="text-gray-700 mt-4 text-justify">
               This milestone reflects not only our four-decade-long journey but
               also a renewed vision for the future. Through a series of events,
               academic discussions, and alumni engagements, we honor our
@@ -73,7 +73,7 @@ export default function Page() {
             <h2 className="text-3xl text-center md:text-left font-semibold text-[#54250B] mb-4">
               ABOUT DEPARTMENT
             </h2>
-            <p className="text-gray-700">
+            <p className="text-gray-700 text-justify">
               The Department of Computer Science and Engineering at Yeshwantrao
               Chavan College of Engineering (YCCE) stands as a hub of
               technological excellence and innovation. Led by the esteemed Head
@@ -81,7 +81,7 @@ export default function Page() {
               to imparting quality education, fostering research, and preparing
               students for the dynamic world of computing.
             </p>
-            <p className="text-gray-700 mt-4">
+            <p className="text-gray-700 mt-4 text-justify">
               With a curriculum that blends core computing principles with
               emerging technologies, we ensure that students gain hands-on
               experience through advanced laboratories, industry collaborations,
