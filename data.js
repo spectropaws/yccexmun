@@ -1,6 +1,6 @@
 // Important date Timeline
 export const EventDates = [
-  { event: "Registration Begins", date: "14 Feb 2025" },
+  { event: "Registration Begins", date: "17 Feb 2025" },
   { event: "Registration Deadline", date: "08 Mar 2025" },
   { event: "Delegation Assigning", date: "10 Mar 2025" },
   { event: "Orientation Session", date: "18 Mar 2025" },
