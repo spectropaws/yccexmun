@@ -73,21 +73,18 @@ const CardGrid = () => {
             <div className="md:hidden">
               <div className="px-2 py-4">
               <h1
-                    ref={(el) => subheadingRefs.current[i] = el} // Assign each subheading to the ref
-                    className="subheading text-3xl font-semibold mb-2 relative inline-block"
-                  >
-                    {subheading}
-                    <span
-                      className={`absolute left-0 bottom-0 h-1 bg-gradient-to-r from-[#FF7E5F] to-[#feb47b] transform transition-all duration-500 ease-in-out`}
-                    ></span>
-                  </h1>
+  className="subheading text-3xl font-semibold mb-2 inline-block bg-gradient-to-r from-[#FF7E5F] to-[#feb47b] bg-left-bottom bg-no-repeat transition-all duration-500 ease-in-out bg-[length:100%_2px]"
+>
+  {subheading}
+</h1>
+
                 <h2 className="text-xl mb-1 font-semibold">{full[i]}</h2>
-                <p className="text-lg text-left text-black mb-2 leading-tight">{paragraphs[i]}</p>
+                <p className="text-lg text-justify text-black mb-2 leading-tight" style={{ wordBreak: 'break-word', hyphens: 'auto', overflowWrap: 'break-word' }}>{paragraphs[i]}</p>
               </div>
 
               <div className="px-2 py-4">
                 <h3 className="text-2xl font-semibold mb-2">Agendas for {subheading}</h3>
-                <p className="text-lg text-left text-black mb-2 leading-tight">{agendas[i]}</p>
+                <p className="text-lg text-justify text-black mb-2 leading-tight" style={{ wordBreak: 'break-word', hyphens: 'auto', overflowWrap: 'break-word' }} >{agendas[i]}</p>
               </div>
 
               <div className="align-middle">
@@ -102,9 +99,9 @@ const CardGrid = () => {
           className="w-full h-48 object-cover rounded-md" 
           style={{ objectPosition: 'center top' }} 
         />
-                      <div className="p-4 text-center">
+                      <div className="p-2 text-center">
                         <h3 className="text-xl font-semibold">{evenSlide.name}</h3>
-                        <p className="text-lg leading-tight font-light mt-2">{evenSlide.description}</p>
+                        <p className="text-base leading-tight text-justify font-light mt-2" style={{ wordSpacing:'-2px', hyphens: 'auto'}}>{evenSlide.description}</p>
                       </div>
                     </div>
                   </div>
@@ -120,9 +117,9 @@ const CardGrid = () => {
           className="w-full h-48 object-cover rounded-md" 
           style={{ objectPosition: 'center top' }} 
         />
-                      <div className="p-4 text-center">
+                      <div className="p-2 text-center">
                         <h3 className="text-xl font-semibold">{oddSlide.name}</h3>
-                        <p className="text-lg leading-tight font-light mt-2">{oddSlide.description}</p>
+                        <p className="text-base leading-tight text-justify font-light mt-2" style={{ wordSpacing:'-2px', hyphens: 'auto'}}>{oddSlide.description}</p>
                       </div>
                     </div>
                   </div>
@@ -160,7 +157,10 @@ const CardGrid = () => {
                   </h1>
 
                   <h2 className="text-xl mb-4 font-semibold">{full[i]}</h2>
-                  <p className="text-lg text-left text-black mb-6">{paragraphs[i]}</p>
+                  <p className="text-lg text-justify text-black mb-6" style={{ wordBreak: 'break-word', hyphens: 'auto', overflowWrap: 'break-word' }}>
+  {paragraphs[i]}
+</p>
+
                 </div>
                 <div className="md:w-2/5 mt-2 flex justify-end">
                   {evenSlide && (
@@ -172,10 +172,10 @@ const CardGrid = () => {
           height={200}  
           className="w-full h-48 object-cover rounded-md" 
           style={{ objectPosition: 'center top' }} 
-        />
+        /> 
                       <div className="p-4 text-center">
                         <h3 className="text-xl font-semibold">{evenSlide.name}</h3>
-                        <p className="text-base text-left leading-tight font-light mt-2">{evenSlide.description}</p>
+                        <p className="text-base text-justify leading-tight font-light mt-2"style={{ wordSpacing:'-2px', hyphens: 'auto'}}>{evenSlide.description}</p>
                       </div>
                     </div>
                   )}
@@ -194,11 +194,10 @@ const CardGrid = () => {
           width={350} 
           height={200} 
           className="w-full h-48 object-cover rounded-md" 
-          style={{ objectPosition: 'center top' }} 
-        />
+          style={{ objectPosition: 'center top' }} />
                       <div className="p-4 text-center">
                         <h3 className="text-xl font-semibold">{oddSlide.name}</h3>
-                        <p className="text-base text-left leading-tight font-light mt-2">{oddSlide.description}</p>
+                        <p className="text-base text-justify leading-tight font-light mt-2" style={{ wordBreak: 'break-word', hyphens: 'auto', overflowWrap: 'break-word' }}>{oddSlide.description}</p>
                       </div>
                     </div>
                   )}
