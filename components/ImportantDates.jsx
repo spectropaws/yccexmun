@@ -16,7 +16,7 @@ const ImportantDates = () => {
           Important Dates
         </h2>
         <div className="flex items-center justify-center">
-          <ul className="timeline timeline-vertical lg:timeline-horizontal">
+          <ul className="timeline timeline-vertical date:timeline-horizontal">
             {EventDates.map((event, index) => {
               const eventPassed = isEventPassed(event.date);
               const hrColor = eventPassed

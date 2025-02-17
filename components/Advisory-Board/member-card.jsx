@@ -18,7 +18,7 @@ const MemberCard = ({ imgSrc, position, name, description, index }) => {
           : "md:flex-row-reverse flex-col"
       }  mt-20`}
     >
-      <div className="md:w-[40%] w-full overflow-hidden rounded-lg hover:shadow-lg">
+      <div className="md:w-[40%] w-full h-max overflow-hidden rounded-lg hover:shadow-lg">
         <Image
           width={500}
           height={500}
