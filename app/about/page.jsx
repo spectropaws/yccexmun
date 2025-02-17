@@ -1,7 +1,7 @@
 import Image from "next/image";
 import MUNImage from "../../public/demo-mun.png";
 import RubyJubileeImg from "../../public/images/ruby-jubliee.jpg";
-import CseDepImg from "../../public/images/cse-department.png"
+import CseDepImg from "../../public/images/cse-department.png";
 import YCCE from "../../public/images/ycce.png";
 import DepartmentImage from "../../public/images/Department_Image.png";
 
@@ -9,7 +9,6 @@ export default function Page() {
   return (
     <div className="min-h-screen py-12 px-6 md:px-20 bg-white text-gray-900">
       <div className="max-w-5xl mx-auto space-y-16">
-        
         {/* INTRODUCTION */}
         <section className="text-center">
           <h1 className="text-4xl font-bold bg-gradient-to-t from-[#C2A597] to-[#54250B] bg-clip-text text-transparent mb-6">
@@ -26,11 +25,11 @@ export default function Page() {
           </p>
           <p className="text-gray-700 mt-4">
             On the momentous occasion of YCCE’s Ruby Jubilee, the Department of
-            CSE proudly presents YCCE X MUN (Model United Nations)—a platform
-            that brings together young minds to discuss global issues,
-            diplomacy, and leadership. This event signifies our commitment to
-            fostering critical thinking, collaboration, and a global perspective
-            among students.
+            CSE proudly presents YCCE X MUN — a platform
+            for young minds to engage in global discussions, diplomacy, and
+            leadership. With NAAC A++ accreditation, this event reflects our
+            commitment to fostering critical thinking, collaboration, and a
+            global perspective among students.
           </p>
         </section>
 

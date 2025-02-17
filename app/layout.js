@@ -23,7 +23,7 @@ export const metadata = {
         type: "website",
         images: [
             {
-                url: "yaha logo url daal dena",
+                url: "https://yccexmun.in/images/mun-logo.jpg",
             },
         ],
     },

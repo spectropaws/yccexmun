@@ -14,7 +14,7 @@ const GenSecLetter = () => {
       <section className="gen-sec-letter">
         <div className="flex flex-col lg:flex-row items-start justify-start gap-10 lg:gap-20">
           <div className="flex-1">
-            <h2 className="text-2xl font-bold mt-8 mb-8"> <span className="text-6xl font-bold">“</span>Message  from the Secretariat General</h2>
+            <h2 className="text-2xl font-bold mt-8 mb-8"> <span className="text-6xl font-bold">“</span>Message  from the General Secretary</h2>
             <p>
               
               <span className="font-semibold">Dear Delegates and Honored Guests,</span><br />
