@@ -120,7 +120,7 @@ export const teamsData = [
     members: [
       {
         name: "Kushal Javkhedkar",
-        role: "Secretariat General",
+        role: "Secretary General",
         image:
           "/USG/Kushal1.jpg",
       },
@@ -132,13 +132,13 @@ export const teamsData = [
       },
       {
         name: "Paras Kalbande",
-        role: "Deputy Secretariat General",
+        role: "Deputy Secretary General",
         image:
           "/USG/Paras Kalbande_DeputyGenSec.jpg",
       },
       {
         name: "Avanti Raut",
-        role: "Deputy General Secretariat",
+        role: "Deputy Secretary General",
         image:
           "/USG/AvantiRaut_DeputyGenSec.jpg",
       },
