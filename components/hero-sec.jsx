@@ -12,6 +12,7 @@ import { carouselImages } from "../data";
 
 const HeroSec = () => {
   const [navHeight, setNavHeight] = useState(0);
+  const [windowHeight, setWindowHeight] = useState(0);
 
   const card = useRef(null);
   const recEff = useRef(null);
@@ -51,8 +52,11 @@ const HeroSec = () => {
 
   useEffect(() => {
     setNavHeight(document.querySelector(".nav-bar").offsetHeight);
+    setWindowHeight(window.innerHeight);
+
     function handleResize() {
       setNavHeight(document.querySelector(".nav-bar").offsetHeight);
+      setWindowHeight(window.innerHeight);
     }
     window.addEventListener("resize", handleResize);
 
@@ -89,7 +93,9 @@ const HeroSec = () => {
             if (src.startsWith("/carousel/img")) {
               return (
                 <SwiperSlide
-                  className={`!w-full !overflow-hidden relative`}
+                  className={`!w-full !overflow-hidden relative ${
+                    windowHeight <= 700 ? "!min-h-[100vh]" : ""
+                  }`}
                   style={{ height: `calc(100vh - ${navHeight}px)` }}
                   key={index}
                 >
@@ -103,7 +109,9 @@ const HeroSec = () => {
             } else {
               return (
                 <SwiperSlide
-                  className={`!w-full !overflow-hidden relative`}
+                  className={`!w-full !overflow-hidden relative ${
+                    windowHeight <= 700 ? "!min-h-[100vh]" : ""
+                  }`}
                   style={{ height: `calc(100vh - ${navHeight}px)` }}
                   key={index}
                 >
@@ -164,7 +172,9 @@ const HeroSec = () => {
         <div ref={card} className="mt-5 md:mt-5 overflow-hidden px-1">
           <div className="py-6 px-10 border mx-1 border-[#54250B] bg-[#EFE7E4]/30 backdrop-blur-sm rounded-md relative">
             <div className="z-20 relative">
-              <h5 className="md:text-2xl text-center text-nowrap">Register Now</h5>
+              <h5 className="md:text-2xl text-center text-nowrap">
+                Register Now
+              </h5>
               <button
                 className="text-nowrap mx-auto group hover:-translate-y-2 hover:scale-110 hover:shadow-lg px-3 py-1 border rounded-[0.5rem] bg-[#C2A597] hover:bg-transparent duration-200 border-[#54250B] mt-5 flex items-center gap-3"
                 onClick={() =>
@@ -197,7 +207,9 @@ const HeroSec = () => {
                       ✕
                     </button>
                   </form>
-                  <h3 className="font-bold text-lg text-start text-gray-800 mb-4">Register Here</h3>
+                  <h3 className="font-bold text-lg text-start text-gray-800 mb-4">
+                    Register Here
+                  </h3>
                   <div>
                     <iframe
                       src="https://konfhub.com/widget/ycce-x-mun?desc=false&secondaryBg=F7F7F7&ticketBg=F7F7F7&borderCl=F7F7F7&bg=FFFFFF&fontColor=572148&ticketCl=572148&btnColor=fb5850&fontFamily=Prompt&borderRadius=10"
