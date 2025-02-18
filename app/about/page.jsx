@@ -7,7 +7,7 @@ import DepartmentImage from "../../public/images/Department_Image.png";
 
 export default function Page() {
   return (
-    <div className="min-h-screen py-12 px-6 md:px-20 bg-white text-gray-900">
+    <div id="about" className="min-h-screen py-12 px-6 md:px-20 bg-white text-gray-900">
       <div className="max-w-5xl mx-auto space-y-16">
         {/* INTRODUCTION */}
         <section className="text-center">
