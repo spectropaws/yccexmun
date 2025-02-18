@@ -13,8 +13,8 @@ const Footer = () => {
   return (
     <footer id="footer" className="bg-[#EFE7E4] text-[#54250B] py-12 shadow-lg">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 gap-x-8 text-center md:text-left">
-          <div className="flex flex-col items-center md:items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-10 gap-x-8 text-center md:text-left">
+          <div className="flex flex-col items-center lg:items-start">
             <h3 className="text-xl font-bold">Location</h3>
             <div className="flex items-center space-x-1 mb-2">
               <MapPinned className="h-5 w-5 text-[#54250B]" />
@@ -30,7 +30,7 @@ const Footer = () => {
             />
           </div>
 
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center lg:items-start">
             <h3 className="text-xl font-bold">Contact</h3>
             {FooterContactInfo.map((item, index) => (
               <div key={index} className="flex items-center space-x-2 mb-1">
@@ -62,9 +62,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center md:items-start gap-y-3">
-            <div className="w-full">
-              <h3 className="text-xl font-bold text-center md:text-left">
+          <div className="flex flex-col items-center lg:items-start gap-y-3">
+            <div className="w-full flex flex-col items-center lg:items-start">
+              <h3 className="text-xl font-bold text-center lg:text-left">
                 Designed & Developed by
               </h3>
 
@@ -78,10 +78,10 @@ const Footer = () => {
             </div>
 
             <div className="w-full">
-              <h3 className="text-xl font-bold mb-1 text-center md:text-left">
+              <h3 className="text-xl font-bold mb-1 text-center lg:text-left">
                 Quick Links
               </h3>
-              <ul className="text-base opacity-80 space-y-2 flex flex-col items-center md:items-start">
+              <ul className="text-base opacity-80 space-y-2 flex flex-col items-center lg:items-start">
                 {FooterLinkData.map((item, index) => (
                   <li key={index}>
                     <a
@@ -120,7 +120,6 @@ export const TechnicalTeamModalComponent = () => {
   return (
     <dialog id="my_modal" className="modal" data-theme="light">
       <div className="relative modal-box bg-white p-6 rounded-lg">
-
         <div className="absolute inset-0 rounded-lg border-2 border-transparent bg-gradient-to-r from-red-500 via-orange-500 via-yellow-500 via-green-500 via-blue-500 via-indigo-500 to-purple-500 p-[2px]">
           <div className="h-full w-full bg-white rounded-lg"></div>
         </div>

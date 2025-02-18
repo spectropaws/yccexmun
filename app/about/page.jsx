@@ -23,7 +23,7 @@ export default function Page() {
           <p className="text-lg font-semibold">
             YCCE X MUN – A Ruby Jubilee Celebration{" "}
           </p>
-          <p className="text-gray-700 mt-4">
+          <p className="text-gray-700 text-justify mt-4">
             On the momentous occasion of YCCE’s Ruby Jubilee, the Department of
             CSE proudly presents YCCE X MUN — a platform
             for young minds to engage in global discussions, diplomacy, and
