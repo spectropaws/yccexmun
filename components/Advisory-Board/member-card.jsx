@@ -31,7 +31,7 @@ const MemberCard = ({ imgSrc, position, name, description, index }) => {
         <h5 className="text-3xl cursor-default font-semibold tracking-wide text-wrap sm:w-max hover-underline">
           {name}
         </h5>
-        <p className={`mt-5 text-justify`}>{description}</p>
+        <p className={`mt-5 text-justify text-black`} style={{ wordBreak: 'break-word', hyphens: 'auto', overflowWrap: 'break-word' }}>{description}</p>
       </div>
     </div>
   );
