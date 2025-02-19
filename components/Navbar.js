@@ -27,8 +27,7 @@ const Navbar = () => {
           className="h-[10%] w-[10%] cursor-pointer"
           onClick={() => window.location.replace("/")}
         />
-
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden lg:flex space-x-6">
           <NavigationMenu>
             <div className="flex space-x-6">
               {NavbarLinksData.map((item, index) => (
@@ -77,7 +76,7 @@ const Navbar = () => {
             </div>
           </NavigationMenu>
         </div>
-        <div className="md:hidden flex items-center">
+        <div className="lg:hidden flex items-center">
           <button
             onClick={toggleMenu}
             className="text-[#54250B] focus:outline-none"
@@ -100,7 +99,7 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out ${
+        className={`lg:hidden overflow-hidden transition-all duration-500 ease-in-out ${
           isMenuOpen ? "max-h-[500px]" : "max-h-0"
         }`}
       >
