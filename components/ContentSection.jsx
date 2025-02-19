@@ -22,7 +22,7 @@ const ContentSection = () => {
 
           {/* MUN Description */}
           <div className="text-center md:text-left space-y-4">
-            <p className="text-lg leading-relaxed text-[#6A3A2A]">
+            <p className="text-lg leading-relaxed text-[#6A3A2A] text-justify">
               <strong>Model United Nations (MUN)</strong> is an academic
               simulation of the United Nations, where students take on the role
               of delegates, representing different countries in various UN
@@ -31,7 +31,7 @@ const ContentSection = () => {
               real-world UN representatives do.
             </p>
             <br />
-            <p className="text-lg leading-relaxed text-[#6A3A2A]">
+            <p className="text-lg leading-relaxed text-[#6A3A2A] text-justify">
               Each delegate is assigned a country and a committee, where they
               research international policies, analyse current affairs, and
               collaborate with others to develop effective solutions.

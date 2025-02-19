@@ -3,7 +3,7 @@ import GenSec from "../../components/GenSec";
 
 export const metadata = {
   title: "GenSec Message", 
-  description: "Message from General Secretariat."
+  description: "Message from Secretary General."
 };
 
 

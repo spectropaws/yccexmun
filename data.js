@@ -1,6 +1,6 @@
 // Important date Timeline
 export const EventDates = [
-  { event: "Registration Begins", date: "14 Feb 2025" },
+  { event: "Registration Begins", date: "17 Feb 2025" },
   { event: "Registration Deadline", date: "08 Mar 2025" },
   { event: "Delegation Assigning", date: "10 Mar 2025" },
   { event: "Orientation Session", date: "18 Mar 2025" },
@@ -120,7 +120,7 @@ export const teamsData = [
     members: [
       {
         name: "Kushal Javkhedkar",
-        role: "Secretariat General",
+        role: "Secretary General",
         image:
           "/USG/Kushal1.jpg",
       },
@@ -132,13 +132,13 @@ export const teamsData = [
       },
       {
         name: "Paras Kalbande",
-        role: "Deputy Secretariat General",
+        role: "Deputy Secretary General",
         image:
           "/USG/Paras Kalbande_DeputyGenSec.jpg",
       },
       {
         name: "Avanti Raut",
-        role: "Deputy General Secretariat",
+        role: "Deputy Secretary General",
         image:
           "/USG/AvantiRaut_DeputyGenSec.jpg",
       },

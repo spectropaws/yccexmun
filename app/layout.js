@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "../components/Footer";
@@ -23,7 +24,7 @@ export const metadata = {
         type: "website",
         images: [
             {
-                url: "/images/mun-logo.jpg",
+                url: "https://yccexmun.in/images/mun-logo.jpg",
             },
         ],
     },
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
