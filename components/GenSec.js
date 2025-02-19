@@ -30,15 +30,16 @@ export default function LetterPage() {
 
           
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-center items-center"> 
-            <div className="relative w-3/4 md:w-2/3 lg:w-1/2"> 
-              <Image
-                src="/images/Kushal.jpg"
-                alt="Kushal Javkhedkar"
-                width={400}
-                height={400}
-                className="w-full h-auto rounded-lg shadow-md"
-              />
-            </div>
+          <div className="relative w-3/4 sm:w-2/3 md:w-1/2 lg:w-2/3 xl:w-1/2"> 
+        <Image
+            src="/images/Kushal.jpg"
+            alt="Kushal Javkhedkar"
+            width={400}
+            height={400}
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+          </div>
+
           </div>
         </section>
       </div>
