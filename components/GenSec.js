@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function LetterPage() {
   return (
-    <div className="px-2 sm:px-2 md:px-10 py-8"> {/* Less margin on mobile */}
+    <div className="px-2 sm:px-2 md:px-10 py-8"> 
       <div className="gen-sec-letter-container shadow-lg rounded-2xl overflow-hidden max-w-none sm:mx-auto">
         <section className="gen-sec-letter flex flex-col lg:flex-row items-center lg:items-center gap-6 p-4 sm:p-2 md:p-10">
-          {/* Left Section (Text) */}
+          
           <div className="text-left w-full lg:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold leading-tight">
               <span className="text-6xl font-extrabold">“</span>
@@ -28,9 +28,9 @@ export default function LetterPage() {
             </div>
           </div>
 
-          {/* Right Section (Image) */}
-          <div className="w-full lg:w-1/2 flex justify-center lg:justify-center items-center"> {/* Ensures perfect centering */}
-            <div className="relative w-3/4 md:w-2/3 lg:w-1/2"> {/* Larger image */}
+          
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-center items-center"> 
+            <div className="relative w-3/4 md:w-2/3 lg:w-1/2"> 
               <Image
                 src="/images/Kushal.jpg"
                 alt="Kushal Javkhedkar"

@@ -7,7 +7,7 @@ import DepartmentImage from "../../public/images/Department_Image.png";
 
 export default function Page() {
   return (
-    <div className="min-h-screen py-12 px-6 md:px-20 bg-white text-gray-900">
+    <div id="about" className="min-h-screen py-12 px-6 md:px-20 bg-white text-gray-900">
       <div className="max-w-5xl mx-auto space-y-16">
         {/* INTRODUCTION */}
         <section className="text-center">
@@ -23,7 +23,7 @@ export default function Page() {
           <p className="text-lg font-semibold">
             YCCE X MUN – A Ruby Jubilee Celebration{" "}
           </p>
-          <p className="text-gray-700 mt-4">
+          <p className="text-gray-700 text-justify mt-4">
             On the momentous occasion of YCCE’s Ruby Jubilee, the Department of
             CSE proudly presents YCCE X MUN — a platform
             for young minds to engage in global discussions, diplomacy, and
