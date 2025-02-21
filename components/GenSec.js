@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function LetterPage() {
   return (
-    <div className="px-2 sm:px-2 md:px-6 py-6"> 
+    <div className="px-2 sm:px-2 md:px-6 py-6">
       <div className="gen-sec-letter-container shadow-lg rounded-2xl overflow-hidden max-w-none sm:mx-auto">
-        <section className="gen-sec-letter flex flex-col lg:flex-row items-center lg:items-center gap-4 p-4 sm:p-2 md:p-8">
+        <section className="gen-sec-letter flex flex-col lg:flex-row items-center lg:items-center gap-2 p-4 sm:p-2 md:p-4">
           
           <div className="text-left w-full lg:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold leading-tight">
@@ -28,18 +28,17 @@ export default function LetterPage() {
             </div>
           </div>
 
-          
-          <div className="w-full lg:w-1/2 flex justify-center lg:justify-center items-center"> 
-          <div className="relative w-3/4 sm:w-2/3 md:w-1/2 lg:w-2/3 xl:w-1/2"> 
-        <Image
-            src="/images/Kushal.jpg"
-            alt="Kushal Javkhedkar"
-            width={400}
-            height={400}
-            className="w-full h-auto rounded-lg shadow-md"
-          />
-          </div>
-
+         
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-center items-center mt-4">
+            <div className="relative w-full sm:w-2/3 md:w-3/4 lg:w-2/3 xl:w-2/3 max-w-[600px]">
+              <Image
+                src="/images/Kushal.jpg"
+                alt="Kushal Javkhedkar"
+                width={550} 
+                height={550} 
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
           </div>
         </section>
       </div>

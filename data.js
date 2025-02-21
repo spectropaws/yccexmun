@@ -154,7 +154,7 @@ export const teamsData = [
         image: "/USG/DhruvMunghate_Hospitality& VolenteersIncharge.jpg",
       },
       {
-        name: "Ridhi Nahate",
+        name: "Riddhi Nahate",
         role: "USG Hospitality & Volunteer In-Charge",
         image: "/USG/Riddhi.jpg",
       },
