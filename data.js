@@ -154,7 +154,7 @@ export const teamsData = [
         image: "/USG/DhruvMunghate_Hospitality& VolenteersIncharge.jpg",
       },
       {
-        name: "Ridhi Nahate",
+        name: "Riddhi Nahate",
         role: "USG Hospitality & Volunteer In-Charge",
         image: "/USG/Riddhi.jpg",
       },
@@ -164,12 +164,12 @@ export const teamsData = [
         image:
           "/USG/Om_Mane_USG-Technical.jpg",
       },
-      {
-        name: "Vinay Muraskar",
-        role: "USG Design",
-        image:
-          "/USG/Vinay Muraskar_Design Head.jpg",
-      },
+      // {
+      //   name: "Vinay Muraskar",
+      //   role: "USG Design",
+      //   image:
+      //     "/USG/Vinay Muraskar_Design Head.jpg",
+      // },
       {
         name: "Chitraksh Chavan",
         role: "USG Design",

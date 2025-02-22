@@ -59,7 +59,10 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		  screens: {
+			'date': '1345px', // for important dates responsiveness
+		  },
   	}
   },
   plugins: [require("tailwindcss-animate"), require("daisyui")],
