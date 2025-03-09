@@ -158,11 +158,11 @@ const HeroSec = () => {
         >
           <div className="flex items-center gap-4">
             <span className="p-2 border border-[#54250B] rounded-sm text-lg sm:text-xl md:text-2xl font-bold text-[#54250B]">
-              22
+              28
             </span>
             <span className="text-2xl sm:text-3xl md:text-4xl">-</span>
             <span className="p-2 border border-[#54250B] rounded-sm text-lg sm:text-xl md:text-2xl font-bold text-[#54250B]">
-              23
+              29
             </span>
           </div>
           <div className="text-lg mt-1 sm:text-xl md:text-3xl tracking-tighter font-bold text-[#54250B]">
