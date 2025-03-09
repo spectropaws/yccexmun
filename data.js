@@ -10,6 +10,7 @@ export const EventDates = [
 
 // Footer Data
 import { Phone, Mail, Globe } from "lucide-react";
+import { title } from "process";
 
 export const FooterContactInfo = [
   {
@@ -90,6 +91,7 @@ export const NavbarLinksData = [
   { url: "/chairs", title: "Committees" },
   { url: "/teams", title: "Team" },
   { url: "/advisory-board", title: "Advisory Board" },
+  { url: "/patrons", title: "Patrons"},
   { url: "/#schedule", title: "Event Schedule" },
   { url: "/#footer", title: "Contact Us" },
 ];
@@ -324,4 +326,32 @@ export const agendas = [
   "Debate on Efficacy of Anti-Conversion Laws: Protecting Freedom of Religion vs Majoritarianism.",
   "Reassessing the Rights of Refugees in the Context of Global Refugee Crisis.",
   "United Nations Security Council Reforms: A Step Towards Democratizing Global Governance?",
+];
+
+export const patrons = [
+  {
+    name: "Dr. U. P. Waghe",
+    position: "Principal YCCE, Nagpur",
+    photo: "/images/Principal.jpg",
+  },
+  {
+    name: "Dr. Manali M. Kshirsagar",
+    position: "Technical Advisor MGI, Nagpur",
+    photo: "/images/Manali.jpg",
+  },
+  {
+    name: "Dr. Lalit B. Damahe",
+    position: "Head of Department, CSE",
+    photo: "/images/HOD.jpg",
+  },
+  {
+    name: "Prof. Vaibhav R. Doifode",
+    position: "Assistant Professor, Electrical",
+    photo: "/images/Vaibhav.jpg",
+  },
+  {
+    name: "Prof. Pratibha P. Wagdale",
+    position: "Assistant Professor, CSE",
+    photo: "/images/Pratibha.jpg",
+  },
 ];
