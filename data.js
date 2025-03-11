@@ -386,4 +386,29 @@ export const patrons = [
     position: "Assistant Professor, CSE",
     photo: "/images/Nikita.jpg",
   },
+  {
+    name: "Prof. Bharati P. Karare",
+    position: "Assistant Professor, CSE",
+    photo: "/images/Bharati.jpg",
+  },
+  {
+    name: "Prof. Jeevan P. Dehankar",
+    position: "Assistant Professor, CSE",
+    photo: "/images/Jeevan.jpg",
+  },
+  {
+    name: "Prof. Amruta P. Paul",
+    position: "Assistant Professor, CSE",
+    photo: "/images/Amruta.jpg",
+  },
+  {
+    name: "Prof. Chanchala P. Tiwari",
+    position: "Assistant Professor, CSE",
+    photo: "/images/Chanchala.jpg",
+  },
+  {
+    name: "Prof. Kavita P. Kathane",
+    position: "Assistant Professor, CSE",
+    photo: "/images/Kavita.jpg",
+  },
 ];

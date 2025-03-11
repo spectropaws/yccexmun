@@ -60,12 +60,14 @@ const PatronsPage = () => {
         <h2 className="text-xl font-semibold text-[#54250B] mb-1">{patrons[0].name}</h2>
         <p className="text-sm text-gray-600">{patrons[0].position}</p>
       </div>
-
+      <div className="relative w-full flex flex-col items-center">
+      <hr className="w-3/4 sm:w-1/2 border-t-[1px] border-[#C2A597] mb-6 mt-10" />
       <h2 className="text-3xl sm:text-5xl font-bold bg-gradient-to-t from-[#C2A597] to-[#54250B] bg-clip-text text-transparent text-center mb-12">
         Chief Patrons
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {patrons.slice(1, 4).map((patron, index) => (
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {patrons.slice(1, 5).map((patron, index) => (
           <div key={index} className="w-[290px] h-[360px] mx-auto border border-[#D8C2A8] rounded-xl shadow-lg bg-white flex flex-col items-center text-center p-6 mb-16">
             <div className="w-40 h-40 mb-6 mx-auto mt-6 relative">
               <StyledImg src={patron.photo} alt={patron.name} width={160} height={160} className="rounded-full object-cover" />
@@ -75,25 +77,31 @@ const PatronsPage = () => {
           </div>
         ))}
       </div>
-
+      <div className="relative w-full flex flex-col items-center">
+      <hr className="w-3/4 sm:w-1/2 border-t-[1px] border-[#C2A597] mb-6 mt-10" />
       <h2 className="text-3xl sm:text-5xl font-bold bg-gradient-to-t from-[#C2A597] to-[#54250B] bg-clip-text text-transparent text-center mb-12">
         Patrons
       </h2>
-      <div className="flex flex-wrap md:mx-36 gap-4 md:gap-6">
+      </div>
+      <div className="flex flex-wrap justify-center sm:flex-nowrap gap-[80]">
   {patrons.slice(5, 7).map((patron, index) => (
-    <div key={index} className="w-[290px] h-[360px] mx-auto border border-[#D8C2A8] rounded-xl shadow-lg bg-white flex flex-col items-center text-center p-6 sm:mb-4">
+    <div key={index} className="w-[290px] h-[360px] border border-[#D8C2A8] rounded-xl shadow-lg bg-white flex flex-col items-center text-center p-6">
       <div className="w-40 h-40 mb-6 mx-auto mt-6 relative">
         <StyledImg src={patron.photo} alt={patron.name} width={160} height={160} className="rounded-full object-cover" />
       </div>
       <h2 className="text-xl font-semibold text-[#54250B] mb-1">{patron.name}</h2>
       <p className="text-sm text-gray-600 mb-4">{patron.position}</p>
-
     </div>
   ))}
 </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 mt-20">
-        {patrons.slice(7, 11).map((patron, index) => (
+<div className="relative w-full flex flex-col items-center">
+<hr className="w-3/4 sm:w-1/2 border-t-[1px] border-[#C2A597] mb-6 mt-20" />
+<h2 className="text-3xl sm:text-5xl font-bold bg-gradient-to-t from-[#C2A597] to-[#54250B] bg-clip-text text-transparent text-center">
+        Organizing Committee
+      </h2>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 gap-6 mt-20">
+        {patrons.slice(7, 17).map((patron, index) => (
           <div key={index} className="w-[290px] h-[360px] mx-auto border border-[#D8C2A8] rounded-xl shadow-lg bg-white flex flex-col items-center text-center p-6">
             <div className="w-40 h-40 mb-6 mx-auto mt-6 relative">
               <StyledImg src={patron.photo} alt={patron.name} width={160} height={160} className="rounded-full object-cover" />
