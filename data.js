@@ -6,6 +6,7 @@ export const EventDates = [
   { event: "Orientation Session", date: "26 Mar 2025" },
   { event: "MUN Conference", date: "22 Mar 2025" },
   { event: "Award Ceremony", date: "23 Mar 2025" },
+
 ];
 
 // Footer Data
@@ -166,12 +167,12 @@ export const teamsData = [
         image:
           "/USG/Om_Mane_USG-Technical.jpg",
       },
-      {
-        name: "Vinay Muraskar",
-        role: "USG Design",
-        image:
-          "/USG/Vinay Muraskar_Design Head.jpg",
-      },
+      // {
+      //   name: "Vinay Muraskar",
+      //   role: "USG Design",
+      //   image:
+      //     "/USG/Vinay Muraskar_Design Head.jpg",
+      // },
       {
         name: "Chitraksh Chavan",
         role: "USG Design",
