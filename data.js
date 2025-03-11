@@ -1,15 +1,17 @@
 // Important date Timeline
 export const EventDates = [
   { event: "Registration Begins", date: "17 Feb 2025" },
-  { event: "Registration Deadline", date: "08 Mar 2025" },
-  { event: "Delegation Assigning", date: "10 Mar 2025" },
-  { event: "Orientation Session", date: "18 Mar 2025" },
-  { event: "MUN Conference", date: "28 Mar 2025" },
-  { event: "Award Ceremony", date: "29 Mar 2025" },
+  { event: "Registration Deadline", date: "20 Mar 2025" },
+  { event: "Delegation Assigning", date: "18 Mar 2025" },
+  { event: "Orientation Session", date: "26 Mar 2025" },
+  { event: "MUN Conference", date: "22 Mar 2025" },
+  { event: "Award Ceremony", date: "23 Mar 2025" },
+
 ];
 
 // Footer Data
 import { Phone, Mail, Globe } from "lucide-react";
+import { title } from "process";
 
 export const FooterContactInfo = [
   {
@@ -88,6 +90,7 @@ export const NavbarLinksData = [
   { url: "/", title: "Home" },
   { url: "/about", title: "About Us" },
   { url: "/chairs", title: "Committees" },
+  { url: "/patrons", title: "Patrons"},
   { url: "/teams", title: "Team" },
   { url: "/advisory-board", title: "Advisory Board" },
   { url: "/#schedule", title: "Event Schedule" },
@@ -324,4 +327,64 @@ export const agendas = [
   "Debate on Efficacy of Anti-Conversion Laws: Protecting Freedom of Religion vs Majoritarianism.",
   "Reassessing the Rights of Refugees in the Context of Global Refugee Crisis.",
   "United Nations Security Council Reforms: A Step Towards Democratizing Global Governance?",
+];
+
+export const patrons = [
+
+  {
+    name: "Hon.Shri. Datta Meghe",
+    position: "Chairman, Nagar Yuvak Shikshan Sanstha",
+    photo: "/images/Visionary.jpg",
+
+  },
+  {
+    name: "Shri. Sameerji Meghe",
+    position: "Treasurer, Nagar Yuvak Shikshan Sanstha",
+    photo:"/images/Sameerji.jpg",
+  },
+  {
+    name: "Shri. Raviji Meghe",
+    position: "Secretary, Nagar Yuvak Shikshan Sanstha",
+    photo:"/images/Raviji.jpg",
+  },
+  {
+    name: "Smt. Vrindatai Meghe",
+    position: "Cheif Advisor, Nagar Yuvak Shikshan Sanstha",
+    photo:"/images/Vrindatai.jpg",
+  },
+  {
+    name: "Dr. Hemant Thakare",
+    position: "COO, Ceinsys Tech. Ltd. President, IEI India",
+    photo:"/images/Hemant.jpg",
+  },
+  {
+    name: "Dr. U. P. Waghe",
+    position: "Principal YCCE, Nagpur",
+    photo: "/images/Principal.jpg",
+  },
+  {
+    name: "Dr. Manali M. Kshirsagar",
+    position: "Technical Advisor MGI, Nagpur",
+    photo: "/images/Manali.jpg",
+  },
+  {
+    name: "Dr. Lalit B. Damahe",
+    position: "Head of Department, CSE",
+    photo: "/images/Lalit.jpg",
+  },
+  {
+    name: "Prof. Vaibhav R. Doifode",
+    position: "Assistant Professor, Electrical",
+    photo: "/images/Vaibhav.jpg",
+  },
+  {
+    name: "Prof. Pratibha P. Wagdale",
+    position: "Assistant Professor, CSE",
+    photo: "/images/Pratibha.jpg",
+  },
+  {
+    name: "Prof. Nikita P. Giridhar",
+    position: "Assistant Professor, CSE",
+    photo: "/images/Nikita.jpg",
+  },
 ];
