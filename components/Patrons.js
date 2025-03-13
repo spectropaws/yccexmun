@@ -83,7 +83,7 @@ const PatronsPage = () => {
         Patrons
       </h2>
       </div>
-      <div className="flex flex-wrap justify-center sm:flex-nowrap gap-[80]">
+      <div className="flex flex-wrap justify-center sm:flex-nowrap md:gap-[80]">
   {patrons.slice(5, 7).map((patron, index) => (
     <div key={index} className="w-[290px] h-[360px] border border-[#D8C2A8] rounded-xl shadow-lg bg-white flex flex-col items-center text-center p-6 mb-16">
       <div className="w-40 h-40 mb-6 mx-auto mt-6 relative">
