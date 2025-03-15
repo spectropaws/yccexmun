@@ -3,10 +3,8 @@ import GenSec from "../../components/GenSec";
 
 export const metadata = {
   title: "GenSec Message", 
-  description: "Message from Secretary General."
+  description: "Read the inspiring message from the Secretary-General of YCCEXMUN, setting the vision for diplomacy, debate, and leadership."
 };
-
-
 
 const GenSecPage = () => {
   console.log('Rendering GenSecPage');
