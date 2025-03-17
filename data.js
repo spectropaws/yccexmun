@@ -4,8 +4,8 @@ export const EventDates = [
   { event: "Registration Deadline", date: "20 Mar 2025" },
   { event: "Delegation Assigning", date: "18 Mar 2025" },
   { event: "Orientation Session", date: "26 Mar 2025" },
-  { event: "MUN Conference", date: "22 Mar 2025" },
-  { event: "Award Ceremony", date: "23 Mar 2025" },
+  { event: "MUN Conference", date: "28 Mar 2025" },
+  { event: "Award Ceremony", date: "29 Mar 2025" },
 
 ];
 
