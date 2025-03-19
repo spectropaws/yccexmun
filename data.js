@@ -373,6 +373,11 @@ export const patrons = [
     photo: "/images/Lalit.jpg",
   },
   {
+    name: "Prof. Fazil Sheikh",
+    position: "Assistant Professor, CSE",
+    photo: "/images/Fazil.jpg",
+  },
+  {
     name: "Prof. Vaibhav R. Doifode",
     position: "Assistant Professor, Electrical",
     photo: "/images/Vaibhav.jpg",
