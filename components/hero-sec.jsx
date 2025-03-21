@@ -9,6 +9,7 @@ import { EffectFade, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import { carouselImages } from "../data";
+import Image from "next/image";
 
 const HeroSec = () => {
   const [navHeight, setNavHeight] = useState(0);
@@ -130,23 +131,32 @@ const HeroSec = () => {
         </Swiper>
       </div>
 
-      <div className="absolute top-0 py-5 z-10 w-full h-full flex flex-col sm:justify-center items-center">
+      <div className="absolute top-0 z-10 w-full h-full flex flex-col sm:justify-center items-center">
+        <Image width={60} height={60} src={"/jubliee.png"} className="w-14 md:w-28 absolute left-2 md:left-5 md:top-5 top-2" />
         <div
           ref={recEff}
-          className="border md:mt-0 sm:mt-0 mt-3 border-red-500 rounded-lg flex items-center px-4 py-1 gap-4 w-max opacity-100 mb-5"
+          className="border mt-4 md:mt-0 sm:mt-0 border-red-500 rounded-lg flex items-center px-4 py-1 gap-4 w-max opacity-100 mb-5"
         >
           YCCE IS WAITING
           <span className="h-4 w-4 rounded-full bg-red-500 animate-pulse"></span>
         </div>
+        <div className="uppercase text-3xl font-semibold text-center mb-3 px-4 md:px-0">
+          <p className="text-2xl md:text-4xl font-bold">
+            ruby jubliee clebration (1984-2024)
+          </p>
+          <p className="text-xl md:text-3xl font-semibold">
+            (celebrating 40 years of excellence)
+          </p>
+        </div>
         <div>
-          <div className="mt-1 lg:mt-0 text-center w-full">
+          <div className=" lg:mt-0 text-center w-full">
             <div className=" overflow-hidden">
-              <h3 className="hero-heading px-2 sm:px-10 lg:px-0 text-5xl sm:text-6xl md:text-8xl font-bold text-[#54250B] tracking-widest">
+              <h3 className="hero-heading px-2 sm:px-10 lg:px-0 text-4xl sm:text-5xl md:text-7xl font-bold text-[#54250B] tracking-widest">
                 YCCE PRESENTS
               </h3>
             </div>
             <div className=" overflow-hidden">
-              <h3 className="hero-heading px-2 sm:px-10 lg:px-0 text-5xl md:text-8xl font-bold text-[#54250B] tracking-widest">
+              <h3 className="hero-heading px-2 sm:px-10 lg:px-0 text-4xl sm:text-5xl md:text-7xl font-bold text-[#54250B] tracking-widest">
                 MUN
               </h3>
             </div>
@@ -154,9 +164,9 @@ const HeroSec = () => {
         </div>
         <div
           ref={dates}
-          className="flex flex-col justify-center items-center border-b border-t px-6 py-3 mt-5"
+          className="flex flex-row gap-5 justify-center items-center border-b border-t px-6 py-3 mt-5"
         >
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
             <span className="p-2 border border-[#54250B] rounded-sm text-lg sm:text-xl md:text-2xl font-bold text-[#54250B]">
               28
             </span>
@@ -170,7 +180,7 @@ const HeroSec = () => {
           </div>
         </div>
         <div ref={card} className="mt-5 md:mt-5 overflow-hidden px-1">
-          <div className="py-6 px-10 border mx-1 border-[#54250B] bg-[#EFE7E4]/30 backdrop-blur-sm rounded-md relative">
+          <div className="py-4 overflow-hidden px-10 border mx-1 border-[#54250B] bg-[#EFE7E4]/30 backdrop-blur-sm rounded-md relative">
             <div className="z-20 relative">
               <h5 className="md:text-2xl text-center text-nowrap">
                 Register Now
@@ -223,7 +233,13 @@ const HeroSec = () => {
               </dialog>
             </div>
             <div ref={earth} className="absolute left-20 top-0 z-0">
-              <img src="/earth.png" alt="earth" className="w-32" />
+              <Image
+                width={500}
+                height={500}
+                src="/earth.png"
+                alt="earth"
+                className="w-32"
+              />
             </div>
           </div>
         </div>
