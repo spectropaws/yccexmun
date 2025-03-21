@@ -1,15 +1,17 @@
 // Important date Timeline
 export const EventDates = [
   { event: "Registration Begins", date: "17 Feb 2025" },
-  { event: "Registration Deadline", date: "08 Mar 2025" },
-  { event: "Delegation Assigning", date: "10 Mar 2025" },
-  { event: "Orientation Session", date: "18 Mar 2025" },
-  { event: "MUN Conference", date: "22 Mar 2025" },
-  { event: "Award Ceremony", date: "23 Mar 2025" },
+  { event: "Registration Deadline", date: "20 Mar 2025" },
+  { event: "Delegation Assigning", date: "18 Mar 2025" },
+  { event: "Orientation Session", date: "26 Mar 2025" },
+  { event: "MUN Conference", date: "28 Mar 2025" },
+  { event: "Award Ceremony", date: "29 Mar 2025" },
+
 ];
 
 // Footer Data
 import { Phone, Mail, Globe } from "lucide-react";
+import { title } from "process";
 
 export const FooterContactInfo = [
   {
@@ -88,6 +90,7 @@ export const NavbarLinksData = [
   { url: "/", title: "Home" },
   { url: "/about", title: "About Us" },
   { url: "/chairs", title: "Committees" },
+  { url: "/patrons", title: "Patrons"},
   { url: "/teams", title: "Team" },
   { url: "/advisory-board", title: "Advisory Board" },
   { url: "/#schedule", title: "Event Schedule" },
@@ -316,12 +319,102 @@ export const full = [
 
 export const paragraphs = [
   "AIPPM is a dynamic MUN committee that simulates high-level political discussions among India’s leading politicians. Delegates engage in heated debates, policy-making, and strategic negotiations on key national issues like governance, security, and economic reforms. This committee challenges participants to think critically, form alliances, and influence decisions, offering a thrilling experience of real-world Indian politics.",
-  "AIPPM is a dynamic MUN committee that simulates high-level political discussions among India’s leading politicians. Delegates engage in heated debates, policy-making, and strategic negotiations on key national issues like governance, security, and economic reforms. This committee challenges participants to think critically, form alliances, and influence decisions, offering a thrilling experience of real-world Indian politics.",
-  "AIPPM is a dynamic MUN committee that simulates high-level political discussions among India’s leading politicians. Delegates engage in heated debates, policy-making, and strategic negotiations on key national issues like governance, security, and economic reforms. This committee challenges participants to think critically, form alliances, and influence decisions, offering a thrilling experience of real-world Indian politics.",
+  "The UNHRC in Model United Nations (MUN) focuses on addressing global human rights issues, ensuring justice, and promoting fundamental freedoms. Delegates represent countries to debate, draft resolutions, and develop policies on critical topics like discrimination, refugees, freedom of speech, and humanitarian crises. The committee encourages diplomatic negotiations, ethical policymaking, and collaborative solutions to uphold human rights worldwide.",
+  "The UNGA in Model United Nations (MUN) is a platform for global dialogue, where all member states discuss and address key international issues. Delegates represent countries to debate, draft resolutions, and develop policies on topics like peace and security, human rights, sustainable development, and international law. The committee encourages diplomatic negotiations, consensus-building, and impactful decision-making to promote global cooperation and stability.",
 ];
 
 export const agendas = [
   "Debate on Efficacy of Anti-Conversion Laws: Protecting Freedom of Religion vs Majoritarianism.",
   "Reassessing the Rights of Refugees in the Context of Global Refugee Crisis.",
   "United Nations Security Council Reforms: A Step Towards Democratizing Global Governance?",
+];
+
+export const patrons = [
+
+  {
+    name: "Hon.Shri. Datta Meghe",
+    position: "Chairman, Nagar Yuvak Shikshan Sanstha",
+    photo: "/images/Visionary.jpg",
+
+  },
+  {
+    name: "Shri. Sameerji Meghe",
+    position: "Treasurer, Nagar Yuvak Shikshan Sanstha",
+    photo:"/images/Sameerji.jpg",
+  },
+  {
+    name: "Shri. Raviji Meghe",
+    position: "Secretary, Nagar Yuvak Shikshan Sanstha",
+    photo:"/images/Raviji.jpg",
+  },
+  {
+    name: "Smt. Vrindatai Meghe",
+    position: "Cheif Advisor, Nagar Yuvak Shikshan Sanstha",
+    photo:"/images/Vrindatai.jpg",
+  },
+  {
+    name: "Dr. Hemant Thakare",
+    position: "COO, Ceinsys Tech. Ltd. President, IEI India",
+    photo:"/images/Hemant.jpg",
+  },
+  {
+    name: "Dr. U. P. Waghe",
+    position: "Principal YCCE, Nagpur",
+    photo: "/images/Principal.jpg",
+  },
+  {
+    name: "Dr. Manali M. Kshirsagar",
+    position: "Technical Advisor MGI, Nagpur",
+    photo: "/images/Manali.jpg",
+  },
+  {
+    name: "Dr. Lalit B. Damahe",
+    position: "Head of Department, CSE",
+    photo: "/images/Lalit.jpg",
+  },
+  {
+    name: "Prof. Fazil Sheikh",
+    position: "Assistant Professor, CSE",
+    photo: "/images/Fazil.jpg",
+  },
+  {
+    name: "Prof. Vaibhav R. Doifode",
+    position: "Assistant Professor, Electrical",
+    photo: "/images/Vaibhav.jpg",
+  },
+  {
+    name: "Prof. Pratibha P. Wagdale",
+    position: "Assistant Professor, CSE",
+    photo: "/images/Pratibha.jpg",
+  },
+  {
+    name: "Prof. Nikita P. Giridhar",
+    position: "Assistant Professor, CSE",
+    photo: "/images/Nikita.jpg",
+  },
+  {
+    name: "Prof. Bharati A. Karare",
+    position: "Assistant Professor, CSE",
+    photo: "/images/Bharati.jpg",
+  },
+  {
+    name: "Prof. Jiwan N. Dehankar",
+    position: "Assistant Professor, CSE",
+    photo: "/images/Jeevan.jpg",
+  },
+  {
+    name: "Prof. Amruta T. Paul",
+    position: "Assistant Professor, CSE",
+    photo: "/images/Amruta.jpg",
+  },
+  {
+    name: "Prof. Chanchala A. Tiwari",
+    position: "Assistant Professor, CSE",
+    photo: "/images/Chanchala.jpg",
+  },
+  {
+    name: "Prof. Kavita A. Kathane",
+    position: "Assistant Professor, CSE",
+    photo: "/images/Kavita.jpg",
+  },
 ];
