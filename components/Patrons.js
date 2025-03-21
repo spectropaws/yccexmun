@@ -101,13 +101,13 @@ const PatronsPage = () => {
       </h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 gap-6 mt-20">
-        {patrons.slice(7, 18).map((patron, index) => (
+        {patrons.slice(7, 19).map((patron, index) => (
           <div key={index} className="w-[290px] h-[360px] mx-auto border border-[#D8C2A8] rounded-xl shadow-lg bg-white flex flex-col items-center text-center p-6 mb-12">
             <div className="w-40 h-40 mb-6 mx-auto mt-6 relative">
               <StyledImg src={patron.photo} alt={patron.name} width={160} height={160} className="rounded-full object-cover" />
             </div>
             <h2 className="text-xl font-semibold text-[#54250B] mb-1">{patron.name}</h2>
-            <p className="text-sm text-gray-600">{patron.position}</p>
+            <p className="text-sm text-black font-normal">{patron.position}<br />{patron.munpos}</p>
           </div>
         ))}
       </div>
