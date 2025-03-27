@@ -132,7 +132,7 @@ const HeroSec = () => {
       </div>
 
       <div className="absolute top-0 z-10 w-full h-full flex flex-col sm:justify-center items-center">
-        <Image width={60} height={60} src={"/jubliee.png"} className="w-14 md:w-28 absolute left-2 md:left-5 md:top-5 top-2" />
+        <Image width={60} height={60} src={"/jubliee.png"} alt="Ruby Jubilee ycce" className="w-14 md:w-28 absolute left-2 md:left-5 md:top-5 top-2" />
         <div
           ref={recEff}
           className="border mt-4 md:mt-0 sm:mt-0 border-red-500 rounded-lg flex items-center px-4 py-1 gap-4 w-max opacity-100 mb-5"
@@ -142,7 +142,7 @@ const HeroSec = () => {
         </div>
         <div className="uppercase text-3xl font-semibold text-center mb-3 px-4 md:px-0">
           <p className="text-2xl md:text-4xl font-bold">
-            ruby jubliee clebration (1984-2024)
+            ruby jubilee celebration (1984-2024)
           </p>
           <p className="text-xl md:text-3xl font-semibold">
             (celebrating 40 years of excellence)
